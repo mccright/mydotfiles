@@ -1,7 +1,7 @@
 " Line numbers
 set number " Set the line number
 
-" Search
+" search as characters are entered
 set incsearch  " Real-time search
 set ignorecase
 set smartcase
@@ -12,7 +12,7 @@ set showmatch  " When a bracket is inserted, briefly jump to the matching one
 " saw showmatch at: https://github.com/tankywoo/dotfiles/blob/master/.vimrc
 
 " Highlight current line
-set cursorline
+set cursorline       " Highlight the line the cursor is on
 
 syntax on " Syntax highlighting
 
