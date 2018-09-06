@@ -1,7 +1,21 @@
 " Line numbers
 set number " Set the line number
-
+set showmode
+set ignorecase
+set noerrorbells
+set noexpandtab
+set nostartofline
+set nowrap
+set textwidth=0
+set wildmenu
+set formatoptions=cqrt
+set shortmess=atToO
+set whichwrap=<,>,h,l
+set viminfo=%,'50,\"100,:100,n~/.viminfo
+filetype indent on
 set ruler
+set showcmd
+syntax on
 set history=1000
 
 " search as characters are entered
