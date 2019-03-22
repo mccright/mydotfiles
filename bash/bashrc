@@ -8,6 +8,16 @@ case $- in
       *) return;;
 esac
 
+# if you normally do `set -o vi', 
+echo "set -o vi" > ~/.inputrc
+echo "set -a" >> ~/.inputrc
+export INPUTRC="~/.inputrc"
+
+# Source set definitions
+if [ -f ~/.inputrc ]; then
+        . ~/.inputrc
+fi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -78,7 +88,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
-
+    # make grep show hits in color
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
