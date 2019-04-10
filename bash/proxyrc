@@ -1,0 +1,43 @@
+#
+puser=<proxyUserName>
+pdomain=<ActiveDirectoryDomain>
+prox=<proxyDNSname>
+proxport=<port>
+pprox=http://<proxyDNSname>:<port>
+ppass=<proxyUserPasswd>
+export puser pdomain pprox ppass prox proxport
+#
+# To use the pac file for curl and other programs you can
+# set the environment variable auto_proxy.
+auto_proxy=$pprox/proxy.pac
+#
+# Commented out below:
+HTTP_PROXY=$puser:$ppass@$pprox
+HTTPS_PROXY="http://$puser:$ppass@$prox:$proxport"
+
+# PROXY_USER=$pdomain/$puser
+#
+PROXY_USER=$pdomain/$puser
+PROXY_PASSWD=$ppass
+# Proxy server for tools like wget
+http_proxy="http://$puser:$ppass@$prox:$proxport"
+https_proxy="http://$puser:$ppass@$prox:$proxport"
+#
+# The following is for ruby gems
+# see: http://stackoverflow.com/questions/1903005/installing-gems-from-behind-a-corporate-firewall
+HTTP_PROXY=$pprox
+HTTP_PROXY_USER=$pdomain/$puser
+HTTP_PASS=$ppass
+HTTPS_PASS=$ppass
+# export http-proxy="http://$puser:$ppass@$prox:$proxport"
+#
+# CPAN uses different proxy environment variables:
+proxy_user=$puser
+proxy_pass=$ppass
+#
+# The rpm manager uses the proxy environment variable
+# proxy="http://$puser:password@$prox:$proxport"
+proxy="http://$puser:$ppass@$prox:$proxport"
+ftp_proxy="http://$puser:$ppass@$prox:$proxport"
+#
+export auto_proxy http_proxy https_proxy proxy_user proxy_pass proxy ftp_proxy PROXY_USER PROXY_PASSWD HTTP_PROXY HTTPS_PROXY HTTPS_PROXY_USER HTTP_PASS HTTPS_PASS
