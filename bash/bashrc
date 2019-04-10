@@ -23,6 +23,19 @@ if [ -f ~/.proxyrc ]; then
         . ~/.proxyrc
 fi
 
+# show the current disk space
+/bin/df -P -k
+#
+
+# Add the java env vars: 12-20-2018
+export JDK_HOME=/usr/lib/jvm/default-java/
+export JAVA_HOME=/usr/lib/jvm/default-java/
+# Give Java a situation-required amt of RAM - May need updating
+export JAVA_OPTS="-Xmx2048m"
+# If in a proxy-protected network, use the approach below:
+#export JAVA_OPTS="-Xmx2048m -Dhttp.proxyHost=<proxyDNSname> -Dhttp.proxyPort=<port> -Dhttps.proxyHost=<proxyIPaddr> -Dh
+ttps.proxyPort=<port> -Dhttps.proxyPassword=<passwd> -Dhttps.proxyUser=<user> -Dhttp.proxyPassword=<passwd> -Dhttp.proxyUser=<user>"
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
