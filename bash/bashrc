@@ -12,6 +12,7 @@ esac
 echo "set -o vi" > ~/.inputrc
 echo "set -a" >> ~/.inputrc
 export INPUTRC="~/.inputrc"
+EDITOR=`which vim`
 
 # Source set definitions
 if [ -f ~/.inputrc ]; then
