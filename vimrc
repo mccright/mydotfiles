@@ -113,7 +113,7 @@ autocmd FileType html,css set noexpandtab tabstop=4
 " /usr/share/vim/vim<ver>/colors/slate.vim
 " /usr/share/vim/vim<ver>/colors/torte.vim
 " /usr/share/vim/vim<ver>/colors/zellner.vim
-colorscheme desert
+colorscheme slate
 
 "               " trailing whitespace highlighting
 highlight ExtraWhitespace ctermbg=red guibg=red
