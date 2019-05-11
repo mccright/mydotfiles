@@ -20,4 +20,6 @@ then
       do
       echo hello $word
       done
+else
+   echo "Too many command line arguments.  Remain below the current threshold: $limit
 fi
