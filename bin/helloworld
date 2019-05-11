@@ -1,0 +1,23 @@
+#!/bin/bash
+
+limit=99
+
+if [[ -z $* ]]
+then
+   echo "No arguments..."
+   echo "Please provide some hello world content as an argument to this script"
+   echo "~/bin/helloworld Matt McCright"
+   exit
+fi
+
+numinputs=$#
+
+if [[ $numinputs -le $limit ]]
+then
+   echo $numinputs inputs
+
+   for word in $*
+      do
+      echo hello $word
+      done
+fi
