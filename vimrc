@@ -28,6 +28,9 @@ hi Visual cterm=NONE ctermfg=black ctermbg=brown
 set showmatch  " When a bracket is inserted, briefly jump to the matching one
 " saw showmatch at: https://github.com/tankywoo/dotfiles/blob/master/.vimrc
 
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+" say this statusline at: https://github.com/okoeroo/vim/blob/master/.vimrc
+
 " Highlight current line
 set cursorline       " Highlight the line the cursor is on
 
@@ -43,7 +46,7 @@ filetype indent on  " Loading the indent file for specific file types with
 " Tab and Indent
 set tabstop=4
 set softtabstop=4
-set shiftwidth=4
+" set shiftwidth=4
 
 set smarttab
 set autoindent  " Copy indent from current line when starting a new line
@@ -113,7 +116,7 @@ autocmd FileType html,css set noexpandtab tabstop=4
 " /usr/share/vim/vim<ver>/colors/slate.vim
 " /usr/share/vim/vim<ver>/colors/torte.vim
 " /usr/share/vim/vim<ver>/colors/zellner.vim
-colorscheme slate
+colorscheme desert
 
 "               " trailing whitespace highlighting
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -127,3 +130,17 @@ autocmd FileType sh setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 autocmd FileType py setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 autocmd FileType vim setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+
+"Delete trailing white space, useful for Python ;)
+" From: https://github.com/okoeroo/vim/blob/master/.vimrc
+func! DeleteTrailingWS()
+    exe "normal mz"
+    %s/\s\+$//ge
+    exe "normal `z"
+endfunc
+
+autocmd BufWrite *.py :call DeleteTrailingWS()
+autocmd BufWrite *.c :call DeleteTrailingWS()
+"autocmd BufWrite *.cc :call DeleteTrailingWS()
+autocmd BufWrite *.h :call DeleteTrailingWS()
+autocmd BufWrite *.sh :call DeleteTrailingWS()
