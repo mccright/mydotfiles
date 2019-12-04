@@ -12,7 +12,7 @@ export puser pdomain pprox ppass prox proxport
 auto_proxy=$pprox/proxy.pac
 #
 # Commented out below:
-HTTP_PROXY=$puser:$ppass@$pprox
+HTTP_PROXY="http://$puser:$ppass@$pprox:$proxport"
 HTTPS_PROXY="http://$puser:$ppass@$prox:$proxport"
 
 # PROXY_USER=$pdomain/$puser
