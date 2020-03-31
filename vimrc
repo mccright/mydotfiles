@@ -50,7 +50,8 @@ set softtabstop=4
 " set shiftwidth=4
 
 set smarttab
-set autoindent  " Copy indent from current line when starting a new line
+# Removing because it messed up pasting in code. 2020-03-31
+# set autoindent  " Copy indent from current line when starting a new line
 set smartindent
 set cindent
 
