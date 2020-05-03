@@ -1,3 +1,8 @@
+" If using this .vimrc reports a pile of errors, you may be using the minimal verison of vim.
+" sudo apt remove --assume-yes vim-tiny
+" then
+" sudo apt install --assume-yes vim
+" should fix it...
 " Line numbers
 set number " Set the line number
 set showmode
