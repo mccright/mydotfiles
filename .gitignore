@@ -82,6 +82,8 @@ __pycache__
 # my convention for virtual dirs
 env
 site-packages
+# another popular convention for virtual dirs
+venv
 
 ####################################
 ####################################
