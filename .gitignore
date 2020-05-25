@@ -21,9 +21,7 @@ TemporaryGeneratedFile*.*
 !.vs/extensions.json
 
 ####################################
-####################################
-### Visual Studio Code
-####################################
+## Visual Studio Code
 ####################################
 .vscode/
 .vscode/*
@@ -32,8 +30,15 @@ TemporaryGeneratedFile*.*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# Fortify Reports
+####################################
+## Fortify Reports
+####################################
 *.fpr
+
+####################################
+## WhiteSource log directory
+####################################
+whitesource
 
 # misc
 *.DONOTUSE
