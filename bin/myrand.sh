@@ -1,0 +1,23 @@
+#!/bin/bash
+
+limit=4092
+
+if [[ -z $* ]]
+then
+   echo "No arguments..."
+   echo "Please define the output length as an argument to this script"
+   echo "~/bin/myrand 512"
+   exit
+fi
+
+numinputs=$#
+
+if [[ $numinputs -le $limit ]]
+then
+   echo Random output or $numinputs characters:
+
+   head -c${1:-$numinputs} /dev/urandom
+   
+else
+   echo "Request for too many characters.  Remain below the current threshold: $limit
+fi
