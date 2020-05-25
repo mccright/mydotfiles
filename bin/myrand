@@ -1,4 +1,5 @@
 #!/bin/bash
+# There are many reasons to need a little 'random' data quickly
 
 limit=4092
 
