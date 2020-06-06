@@ -20,6 +20,8 @@ TemporaryGeneratedFile*.*
 !.vs/tasks.json
 !.vs/launch.json
 !.vs/extensions.json
+packages/
+packages/*
 
 ####################################
 ## Visual Studio Code
