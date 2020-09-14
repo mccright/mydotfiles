@@ -35,7 +35,7 @@ set showmatch  " When a bracket is inserted, briefly jump to the matching one
 " saw showmatch at: https://github.com/tankywoo/dotfiles/blob/master/.vimrc
 
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
-" say this statusline at: https://github.com/okoeroo/vim/blob/master/.vimrc
+" saw this statusline at: https://github.com/okoeroo/vim/blob/master/.vimrc
 
 " Highlight current line
 set cursorline       " Highlight the line the cursor is on
