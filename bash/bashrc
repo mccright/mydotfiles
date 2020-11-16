@@ -8,17 +8,6 @@ case $- in
       *) return;;
 esac
 
-# if you normally do `set -o vi', 
-echo "set -o vi" > ~/.inputrc
-echo "set -a" >> ~/.inputrc
-export INPUTRC="~/.inputrc"
-EDITOR=`which vim`
-
-# Source set definitions
-if [ -f ~/.inputrc ]; then
-        . ~/.inputrc
-fi
-
 # Source proxy configuration
 if [ -f ~/.proxyrc ]; then
         . ~/.proxyrc
@@ -28,13 +17,104 @@ fi
 /bin/df -P -k
 #
 
-# Add the java env vars: 12-20-2018
-export JDK_HOME=/usr/lib/jvm/default-java/
-export JAVA_HOME=/usr/lib/jvm/default-java/
+export LINESEPARATOR='- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
+if [ -f /bin/toilet ]; then
+    toilet -f pagga '                  TeamName'
+else
+    echo "Install toilet! Use: sudo apt install toilet"
+fi
+
+# Set up Java Home if java jdk is installed
+if [ -f /usr/lib/jvm/java-11-openjdk-amd64/bin/javac ]; then
+    export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+    echo "openJDK is installed"
+        java --version
+        echo $LINESEPARATOR
+else
+    echo "You must install openJDK. Use: sudo apt install openjdk-11-jdk"
+fi
+
+# Expand $PATH to include the directory
+# where Java applications are installed.
+java_bin_path="/usr/lib/jvm/java-11-openjdk-amd64/bin/"
+if [ -n "${PATH##*${java_bin_path}}" -a -n "${PATH##*${java_bin_path}:*}" ]; then
+    export PATH=$PATH:${java_bin_path}
+fi
+
+# Set up Java Home if java is installed
+if [ -f /usr/lib/jvm/java-11-openjdk-amd64/bin/java  ]; then
+    echo "openJDK jre is available"
+        # java --version
+        # echo '- - - - - - - - - -'
+        echo $LINESEPARATOR
+else
+    echo "I didn't find the openJDK jre. There is a problem."
+        echo "Use: sudo apt install openjdk-11-jdk"
+fi
+
 # Give Java a situation-required amt of RAM - May need updating
 export JAVA_OPTS="-Xmx2048m"
 # If in a proxy-protected network, use the approach below:
 #export JAVA_OPTS="-Xmx2048m -Dhttp.proxyHost=<proxyDNSname> -Dhttp.proxyPort=<port> -Dhttps.proxyHost=<proxyIPaddr> -Dhttps.proxyPort=<port> -Dhttps.proxyPassword=<passwd> -Dhttps.proxyUser=<user> -Dhttp.proxyPassword=<passwd> -Dhttp.proxyUser=<user>"
+
+# Expand $PATH to include the directory
+# where Maven applications are installed.
+maven_bin_path="/usr/share/maven/bin/"
+if [ -n "${PATH##*${maven_bin_path}}" -a -n "${PATH##*${maven_bin_path}:*}" ]; then
+    export PATH=$PATH:${maven_bin_path}
+fi
+
+# Set up Maven Home if Maven is installed
+if [ -f /usr/share/maven/bin/mvn  ]; then
+        echo "Maven is installed"
+    export MAVEN_HOME=/usr/share/maven
+    export M2_HOME=/usr/share/maven-repo
+        mvn --version
+        echo $LINESEPARATOR
+else
+    echo "You must install maven. Use: sudo apt install maven"
+    echo "see: https://linuxize.com/post/how-to-install-apache-maven-on-ubuntu-20-04/"
+fi
+
+if [ -f /etc/profile.d/maven.sh ]; then
+    . /etc/profile.d/maven.sh
+fi
+
+
+if [ -f /etc/profile.d/gradle.sh ]; then
+    . /etc/profile.d/gradle.sh
+        echo "Gradle is installed"
+        gradle --version 2>/dev/null
+else
+    echo "You must install gradle. Use: sudo apt install gradle"
+    echo "see: https://linuxize.com/post/how-to-install-gradle-on-ubuntu-20-04/"
+fi
+
+# set a large history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=10000
+HISTFILESIZE=20000
+
+# I do a lot of static code security analysis...
+# Expand $PATH to include the directory
+# where Fortify ScanCentral applications are installed.
+cloudscan_bin_path="$HOME/fortify/cloudscan/bin/"
+if [ -n "${PATH##*${cloudscan_bin_path}}" -a -n "${PATH##*${cloudscan_bin_path}:*}" ]; then
+    export PATH=$PATH:${cloudscan_bin_path}
+fi
+
+# if you normally do `set -o vi',
+echo "set editing-mode vi" > ~/inputrc
+# When performing tab completion, a single tab attempts to partially complete the current word.
+# If no partial completions are possible, a double tab shows all possible completions.
+# The double tab can be changed to a single tab by setting
+echo "set show-all-if-unmodified on" >> ~/inputrc
+export INPUTRC=~/inputrc
+export EDITOR=`which vim`
+
+# Source set definitions
+if [ -f ~/inputrc ]; then
+    . ~/inputrc
+fi
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
