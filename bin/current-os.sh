@@ -13,9 +13,9 @@
 # fi
 #
 SHORT_DISTRIB_DESC=$(lsb_release -s -d)
-CODE_NAME=$(lsb_release -c)
+CODE_NAME=$(lsb_release -c | awk '{print $2}')
 AVAILABLE_MEM=$(cat /proc/meminfo | grep -i memavailable | awk '{print $2}')
 #
-# printf "Current OS: %s \'%s\' (%s %s %s)\n" "$SHORT_DISTRIB_DESC" "$(echo $CODE_NAME | cut -d " " -f 2)" "$(uname -o)" "$(uname -r)" "$(uname -m)"
+# printf "Current OS: %s \'%s\' (%s %s %s)\n" "$SHORT_DISTRIB_DESC" "$CODE_NAME" "$(uname -o)" "$(uname -r)" "$(uname -m)"
 # Appended available memory
-printf "Current OS: %s \'%s\' (%s %s %s) - %sK mem free\n" "$SHORT_DISTRIB_DESC" "$(echo $CODE_NAME | cut -d " " -f 2)" "$(uname -o)" "$(uname -r)" "$(uname -m)" "$AVAILABLE_MEM"
+printf "Current OS: %s \'%s\' (%s %s %s) - %sK mem avail\n" "$SHORT_DISTRIB_DESC" "$CODE_NAME" "$(uname -o)" "$(uname -r)" "$(uname -m)" "$AVAILABLE_MEM"
