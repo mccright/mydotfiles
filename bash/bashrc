@@ -18,6 +18,7 @@ fi
 #
 
 export LINESEPARATOR='- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
+# Replace 'TeamName' below with your team name:
 if [ -f /bin/toilet ]; then
     toilet -f pagga '                  TeamName'
 else
@@ -114,6 +115,11 @@ export EDITOR=`which vim`
 # Source set definitions
 if [ -f ~/inputrc ]; then
     . ~/inputrc
+fi
+
+# Describe the current OS
+if [ -f ~/bin/current-os.sh ]; then
+    . ~/bin/current-os.sh
 fi
 
 # don't put duplicate lines or lines starting with space in the history.
