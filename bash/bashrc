@@ -212,6 +212,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com' 
 
+# Print your external IP address
 alias externalip='curl https://ipinfo.io/ip; echo "";'
 
 function myexternalip() { 
