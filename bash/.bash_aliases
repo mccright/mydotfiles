@@ -12,3 +12,6 @@ tldr() {
   curl "cheat.sh/$@"
 }
 
+updateos() {
+sudo apt-get update && apt-get -y upgrade
+}
