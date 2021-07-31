@@ -14,7 +14,6 @@ TemporaryGeneratedFile*.*
 
 ####################################
 # IDE - Visual Studio
-####################################
 .vs/*
 !.vs/settings.json
 !.vs/tasks.json
@@ -25,7 +24,6 @@ packages/*
 
 ####################################
 ## Visual Studio Code
-####################################
 .vscode/
 .vscode/*
 !.vscode/settings.json
@@ -35,12 +33,10 @@ packages/*
 
 ####################################
 ## Fortify Reports
-####################################
 *.fpr
 
 ####################################
 ## WhiteSource log directory
-####################################
 whitesource
 
 # misc
@@ -54,7 +50,6 @@ mssccprj.scc
 
 ####################################
 ### Generic Files
-####################################
 *.log
 logs
 *.tmp
@@ -63,37 +58,39 @@ local.properties
 
 ####################################
 ### OS Files
-####################################
 Thumbs.db
 .copyarea.db
+._*
+.cache
+.DS_Store
+.idea
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
 
 ####################################
 ### Git
-####################################
 *.orig
 
 ####################################
 ### python
-####################################
 *.pyc
 __pycache__
 # my convention for virtual dirs
 env
-site-packages
 # another popular convention for virtual dirs
 venv
 
 ####################################
 ### Sublime Text
-####################################
 # cache files for sublime text
 *.tmlanguage.cache
 *.tmPreferences.cache
 *.stTheme.cache
-
 # workspace files are user-specific
 *.sublime-workspace
-
 # sublime project files
 *.sublime-project
 
@@ -102,7 +99,6 @@ sftp-config.json
 
 ####################################
 ### Node
-####################################
 # Runtime data
 pids
 *.pid
@@ -126,21 +122,18 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
-
 .env
 .next/
-
 reports/
 
 ####################################
 ### Bower
-####################################
+
 bower_components
 lib
 
 ####################################
 ### grunt
-####################################
 # Output directory
 dist/
 
@@ -149,27 +142,22 @@ dist/
 
 ####################################
 ### Sass
-####################################
 .sass-cache
 *.css.map
 scss-lint-report.xml
 
 ####################################
 ### Vagrant
-####################################
 .vagrant/
 
 ####################################
 ### RAD / Java
-####################################
 # Java #
 *.class
-
 # Packaged Files #
 *.jar
 *.war
 *.ear
-
 # RAD #
 .apt_generated
 .classpath
