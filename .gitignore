@@ -14,25 +14,23 @@ TemporaryGeneratedFile*.*
 
 ####################################
 # IDE - Visual Studio
-.vs/*
+.vs
 !.vs/settings.json
 !.vs/tasks.json
 !.vs/launch.json
 !.vs/extensions.json
-packages/
-packages/*
+packages
 
 ####################################
 ## Visual Studio Code
-.vscode/
-.vscode/*
+.vscode
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
 ####################################
-## Fortify Reports
+## Fortify Static Analysis Reports
 *.fpr
 
 ####################################
@@ -43,7 +41,6 @@ whitesource
 *.DONOTUSE
 vssver.scc
 mssccprj.scc
-
 
 # Specific to this build
 *.csproj.FileListAbsolute.txt
@@ -123,22 +120,23 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
 .env
-.next/
-reports/
+.next
+reports
 
 ####################################
 ### Bower
-
 bower_components
 lib
 
 ####################################
 ### grunt
+validation-report.json
+validation-status.json
 # Output directory
-dist/
-
-# Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
+dist
+# Grunt often preprocesses files such as coffeescript, compass... inside the .tmp directory
 .tmp/
+
 
 ####################################
 ### Sass
@@ -148,7 +146,7 @@ scss-lint-report.xml
 
 ####################################
 ### Vagrant
-.vagrant/
+.vagrant
 
 ####################################
 ### RAD / Java
@@ -163,18 +161,18 @@ scss-lint-report.xml
 .classpath
 .factorypath
 .project
-.settings/
+.settings
 .wtpmodules
 .metadata
 
 # IntelliJ
-.idea/
+.idea
 *.iml
 
 ####################################
 ### Maven
 ####################################
-target/
+target
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -184,4 +182,4 @@ release.properties
 ####################################
 ### Codeceptjs
 ####################################
-output/
+output
