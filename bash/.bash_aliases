@@ -13,7 +13,7 @@ refreshsystem() {
 
 # Check on definition of a given http response code
 responsecode(){
-  /usr/bin/python3 ~/bin/http-codes.py | /usr/bin/grep -i $@
+  /usr/bin/python3 ~/bin/http-response-codes.py | /usr/bin/grep -i $@
 }
 
 # Thank you Simon Eskildsen
