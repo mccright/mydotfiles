@@ -1,0 +1,118 @@
+# Config file for girouette
+
+# OpenWeather API key
+#
+# girouette comes with a default key for girouette that is rate-limited. 
+# Get a free API key for your own use at https://openweathermap.org/
+key: "<enter_your_key_here>"
+
+# Location to query
+#
+# The Lat/Long for Urbandale, US is:
+# location = "41.6267,-93.7122"
+location: "Urbandale, US"
+
+# units (string: metric, imperial or standard): unit system to 
+# use when displaying temperatures and speeds. Defaults to metric.
+units: "imperial"
+
+# Separator text between entries
+#
+# defaults to two whitespace charaters "  "
+#separator: " | "
+
+# Caching of API responses
+#
+# Value can be a duration ("1h", "2 days", "10min") or "none" to disable it
+cache: "10min"
+
+# Time to wait for a response from Openweather
+#
+# Value can be a duration ("1h", "2 days", "10min"), defaults to "10s".
+timeout: "16s"
+
+# Language for location names, weather descriptions and date/time formatting.
+#
+# Possible values are of the form 'aa_AA' like 'en_US' or 'fr_FR'. Note that
+# OpenWeather only supports a subset of all valid LANG values.
+#language: "ja_JP"
+
+# Background style for the whole bar
+#
+# All other styles support the same options.
+# All colors can be either:
+#  - a color name (black, blue, green, red, cyan, magenta, yellow, white)
+#    example: "yellow"
+#  - an integer between 0 and 255 representing an ANSI color code
+#    example: 122
+#  - an hexadecimal color code
+#    example: "#002b3f"
+#  - a triple of integer representing an RGB color
+#    example: [15, 55, 84]
+base_style:
+  # Background color
+  bg: 17
+  # Foreground color
+  fg: 248
+  # Bold text
+  #bold: false
+  # Intense text
+  #intense: false
+  # Underline text (not supported in all terminals)
+  #underline: false
+  # Italic text (not supported in all terminals)
+  #italic: false
+
+# Display mode supported by the terminal emulator:
+# - "ascii"
+#   Only use ASCII charaters. Icons will be very limited or even inexistant.
+#
+# - "unicode"
+#   Use standard Unicode characters. This will use the somewhat limited list of
+#   weather related icons in Unicode. This is the default.
+#
+# - "nerd_fonts"
+#   Use the weather icons provided as part of the Nerd Fonts package.
+#   The provides the most specific and best-looking icons for weather, but must
+#   be installed first.
+#
+#display_mode: "unicode"
+
+# Segments to display
+segments:
+  - instant:
+      style:
+        fg: 167
+      date_format: "%v %R %:z"
+  - location_name:
+      style:
+        fg: white
+        intense: true
+  - temperature:
+      feels_like: true
+      #style: "scaled" # by default: auto-scale the color
+      #style:          # or manually set the style
+      #  fg: 213
+      #  bold: true
+  - weather_icon:
+      style:
+        fg: white
+        intense: true
+  - weather_description:
+      style:
+        fg: white
+        intense: true
+  - rain:
+      style:
+        fg: 45
+  - snow:
+      style:
+        fg: 45
+  - wind_speed
+  - cloud_cover
+  - humidity
+  #- pressure:
+  #    style:
+  #      fg: green
+  #      intense: true
+ 
