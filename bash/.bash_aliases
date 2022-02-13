@@ -1,5 +1,10 @@
+# Get the current weather
+# Depends on a config file in ~/.config/girouette/config.yml
+if [ -x ~/bin/girouette ]; then
+        alias weather='~/bin/girouette'
+fi
 
-
+#
 updateos() {
 sudo apt-get update && sudo apt-get -y upgrade
 }
