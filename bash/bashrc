@@ -220,6 +220,9 @@ function myexternalip() {
     echo "";
 }
 
+# from: https://github.com/mccright/rand-notes/blob/master/Generate-random-data.md
+function randpass(){  < /dev/urandom  tr -dc '_A-Za-z0-9!@#$%^&*,.=+~' | head -c${1:-13};echo;}
+
 function tarz() {
         [ "$1" != "" ] && tar -czRf $1.tar.gz $1 && echo "$1.tar.gz created successfully!"|| echo "Usage: tarz [folder_or_file]"
 }
