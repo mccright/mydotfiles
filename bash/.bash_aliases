@@ -55,3 +55,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# Show where I am hogging drive space
+# Thank you Tom Hudson https://github.com/tomnomnom/dotfiles/blob/master/.bashrc
+alias biggestdir="du -h --max-depth=1 | sort -h"
+# and for 
+alias follow="tail -f -n +1"
+
