@@ -55,9 +55,34 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+alias serv='python -m SimpleHTTPServer'
+
 # Show where I am hogging drive space
 # Thank you Tom Hudson https://github.com/tomnomnom/dotfiles/blob/master/.bashrc
 alias biggestdir="du -h --max-depth=1 | sort -h"
 # and for 
 alias follow="tail -f -n +1"
 
+# FROM: https://github.com/jaesivsm/dotfiles/blob/master/files/bash/bash_aliases
+grepk() {
+    grep -ER \
+        --binary-files=without-match \
+        --exclude-dir=".webassets-cache" \
+        --exclude-dir=".git" \
+        --exclude-dir="venv" \
+        --exclude-dir="build" \
+        --exclude-dir="static" \
+        --exclude-dir="site-packages" \
+        --exclude-dir="gen"  \
+        --exclude-dir=".mypy_cache" \
+        --exclude-dir="__snapshots__" \
+        --exclude-dir="dist" \
+        --exclude-dir="cypress" \
+        --exclude-dir="node_modules" \
+        --exclude="tslint.json" \
+        --exclude="*.min.js" \
+        --exclude="*.pyc" \
+        --exclude="*.swp" \
+        --exclude="*~" \
+        "$*" .
+}
