@@ -91,9 +91,14 @@ else
     echo "see: https://linuxize.com/post/how-to-install-gradle-on-ubuntu-20-04/"
 fi
 
-# set a large history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=10000
-HISTFILESIZE=20000
+# Ensure mono is installed
+# I use some applications that depend on it
+if [ -f /usr/bin/mono  ]; then
+        echo "Mono is installed"
+        echo $LINESEPARATOR
+else
+    echo "You must install mono. Use: sudo apt install --upgrade mono-complete"
+fi
 
 # I do a lot of static code security analysis...
 # Expand $PATH to include the directory
@@ -130,8 +135,9 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=5500
-HISTFILESIZE=10000
+# Enlarge the history length
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
