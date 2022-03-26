@@ -259,6 +259,18 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# finally show the hostname and do the greeter
+if [ -f /usr/bin/figlet ]; then
+    /usr/bin/figlet `(hostname)`
+fi
+
+# cowsay greeter from https://github.com/jaesivsm/dotfiles/blob/master/files/bash/bashrc
+# I got tired of the animals for now and just go with fortunes
+if [ -x "/usr/games/cowsay" ] && [ -x "/usr/games/fortune" ] && [ -d "$HOME/cows" ]; then
+    # /usr/games/cowsay -f ~/.cows/$(/bin/ls ~/.cows -1 | head -n $(expr $$$(date +%s) % $(/bin/ls ~/.cows | wc -w) + 1) | tail -n 1) "$(/usr/games/fortune -a)"
+    /usr/games/fortune -a
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
