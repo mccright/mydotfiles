@@ -55,7 +55,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-alias serv='python -m SimpleHTTPServer'
+alias serv='python -m http.server 4321'
 
 # Show where I am hogging drive space
 # Thank you Tom Hudson https://github.com/tomnomnom/dotfiles/blob/master/.bashrc
