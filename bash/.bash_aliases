@@ -5,31 +5,42 @@ if [ -x ~/bin/girouette ]; then
 fi
 
 #
-updateos() {
+function updateos() {
 sudo apt-get update && sudo apt-get -y upgrade
 }
 
 # 
-refreshsystem() {
+function refreshsystem() {
   vim +PlugUpdate +qall
   sudo apt update
   sudo apt upgrade -y
 }
 
+# 3 ways to print your 'external'/Internet-visable IP address
+alias wanip='dig +short myip.opendns.com @resolver1.opendns.com' 
+
+alias externalip='curl https://ipinfo.io/ip; echo "";'
+
+function myexternalip() { 
+    curl https://ipinfo.io/ip;
+    echo "";
+}
+
+
 # Check on definition of a given http response code
-responsecode(){
+function responsecode(){
   /usr/bin/python3 ~/bin/http-response-codes.py | /usr/bin/grep -i $@
 }
 
 # Thank you Simon Eskildsen
 # https://github.com/sirupsen/dotfiles/blob/master/home/.bash/04_aliases.bash
-tldr() {
+function tldr() {
   curl "cheat.sh/$@"
 }
 
 # Thank you Filipe Kiss
 # https://coderwall.com/p/euwpig/a-better-git-log
-gitlog() {
+function gitlog() {
 git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
 }
 
@@ -64,7 +75,7 @@ alias biggestdir="du -h --max-depth=1 | sort -h"
 alias follow="tail -f -n +1"
 
 # FROM: https://github.com/jaesivsm/dotfiles/blob/master/files/bash/bash_aliases
-grepk() {
+function grepk() {
     grep -ER \
         --binary-files=without-match \
         --exclude-dir=".webassets-cache" \
