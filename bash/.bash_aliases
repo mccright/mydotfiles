@@ -1,7 +1,7 @@
 # Get the current weather
 # Depends on a config file in ~/.config/girouette/config.yml
 if [ -x ~/bin/girouette ]; then
-        alias weather='~/bin/girouette'
+        alias weather='/usr/bin/echo `~/bin/girouette`'
 fi
 
 #
@@ -58,15 +58,20 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
 
-alias serv='python -m http.server 4321'
+# Don't do this alias unless you understand how
+# it expands your attack surface.
+# It is a hack for some short-lived edge cases where 
+# I need to share data with someone on my segment 
+# and there are no other convenient options.
+alias serv='python3 -m http.server 4321'
 
 # Show where I am hogging drive space
 # Thank you Tom Hudson https://github.com/tomnomnom/dotfiles/blob/master/.bashrc
