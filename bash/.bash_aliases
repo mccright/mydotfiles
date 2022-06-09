@@ -44,6 +44,32 @@ function gitlog() {
 git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
 }
 
+# Thank you Mete Balci (https://metebalci.com/)
+# https://github.com/metebalci/simplehelpers/blob/master/strip_whitespaces.sh
+# removes the line feed ("\n") and space (" ") charactes in stdin
+# useful especially for hex data such as keys, certificates
+# obviously it does not remove all the whitespaces but it can easily be improved
+function strip-whitespaces {
+  tr -d "\n" | tr -d " "
+}
+
+# Thank you Mete Balci (https://metebalci.com/)
+# https://github.com/metebalci/simplehelpers/blob/master/todec_tohex.sh
+# converts hex to decimal
+# tr converts lower case to upper case first, bc accepts upper case only
+function todec {
+  uc=`echo $1 | tr '[:lower:]' '[:upper:]'`
+  echo "ibase=16; $uc" | bc
+}
+
+# Thank you Mete Balci (https://metebalci.com/)
+# https://github.com/metebalci/simplehelpers/blob/master/todec_tohex.sh
+# converts decimal to hex
+# tr converts upper case to lower case, just because
+function tohex {
+  uc=`echo "obase=16; $1" | bc`
+  echo $uc | tr '[:upper:]' '[:lower:]'
+}
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
