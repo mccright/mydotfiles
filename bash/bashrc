@@ -127,6 +127,10 @@ if [ -f ~/bin/current-os.sh ]; then
     . ~/bin/current-os.sh
 fi
 
+# This is to support pipenv
+# https://github.com/pypa/pipenv
+eval "$(_PIPENV_COMPLETE=bash_source pipenv)"
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -192,6 +196,11 @@ xterm*|rxvt*)
     ;;
 esac
 
+# set some color-supporting environment variables
+if [ -x ~/bin/terminal_colors.sh ]; then
+    source ~/bin/terminal_colors.sh
+fi
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -207,57 +216,8 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-alias wanip='dig +short myip.opendns.com @resolver1.opendns.com' 
-
-# Print your external IP address
-alias externalip='curl https://ipinfo.io/ip; echo "";'
-
-function myexternalip() { 
-    curl https://ipinfo.io/ip;
-    echo "";
-}
-
-# from: https://github.com/mccright/rand-notes/blob/master/Generate-random-data.md
-function randpass(){  < /dev/urandom  tr -dc '_A-Za-z0-9!@#$%^&*,.=+~' | head -c${1:-13};echo;}
-
-function tarz() {
-        [ "$1" != "" ] && tar -czRf $1.tar.gz $1 && echo "$1.tar.gz created successfully!"|| echo "Usage: tarz [folder_or_file]"
-}
-
-function extract() { 
-    if [ -f $1 ] ; then 
-      case $1 in 
-        *.tar.bz2)   tar xjf $1     ;; 
-        *.tar.gz)    tar xzf $1     ;; 
-        *.bz2)       bunzip2 $1     ;; 
-        *.rar)       unrar e $1     ;; 
-        *.gz)        gunzip $1      ;; 
-        *.tar)       tar xf $1      ;; 
-        *.tbz2)      tar xjf $1     ;; 
-        *.tgz)       tar xzf $1     ;; 
-        *.zip)       unzip $1       ;; 
-        *.Z)         uncompress $1  ;; 
-        *.7z)        7z x $1        ;; 
-        *)     echo "'$1' cannot be extracted via extract()" ;; 
-         esac 
-     else 
-         echo "'$1' is not a valid file" 
-     fi 
-}
-
-
-
 # Alias definitions.
-# You may want to put all your additions into a separate file like
+# I put most of my aliases into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
