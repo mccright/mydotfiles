@@ -74,6 +74,10 @@ function tohex {
 # from: https://github.com/mccright/rand-notes/blob/master/Generate-random-data.md
 function randpass(){  < /dev/urandom  tr -dc '_A-Za-z0-9!@#$%^&*,.=+~' | head -c${1:-13};echo;}
 
+# make installs easier 
+# thank you https://github.com/saulpw/dotfiles
+alias sagi='sudo apt-get install' $1
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
