@@ -17,6 +17,7 @@ fi
 /bin/df -P -k
 #
 
+export TZ=America/Chicago
 export LINESEPARATOR='- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -'
 # Replace 'TeamName' below with your team name:
 if [ -f /bin/toilet ]; then
