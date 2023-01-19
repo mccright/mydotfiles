@@ -35,9 +35,9 @@ function responsecode(){
 # Thank you Jinzhou Zhang
 # https://github.com/lotabout/dotfiles/blob/master/.profile
 # Bash toolbox.
-path_remove ()  { export PATH=`echo -n $PATH | awk -v RS=: -v ORS=: '$0 != "'$1'"' | sed 's/:$//'`; }
-path_append ()  { path_remove $1; export PATH="$PATH:$1"; }
-path_prepend () { export PATH="$1:$PATH"; }
+function path_remove ()  { export PATH=`echo -n $PATH | awk -v RS=: -v ORS=: '$0 != "'$1'"' | sed 's/:$//'`; }
+function path_append ()  { path_remove $1; export PATH="$PATH:$1"; }
+function path_prepend () { export PATH="$1:$PATH"; }
 
 # Thank you Simon Eskildsen
 # https://github.com/sirupsen/dotfiles/blob/master/home/.bash/04_aliases.bash
