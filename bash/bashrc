@@ -109,6 +109,32 @@ if [ -n "${PATH##*${cloudscan_bin_path}}" -a -n "${PATH##*${cloudscan_bin_path}:
     export PATH=$PATH:${cloudscan_bin_path}
 fi
 
+#
+# npm is everywhere...
+if [ -d $HOME/node ]; then
+    path_prepend $HOME/node
+fi
+
+# 
+# Rust is also virtually everywhere...
+# rustupdate
+export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
+if [ -d $HOME/.cargo/bin ]; then
+    path_prepend $HOME/.cargo/bin
+fi
+
+if [ -f "$HOME/.cargo/env" ]; then
+    source "$HOME/.cargo/env" 
+fi
+
+# 
+# and if needed uncomment this for Go
+## export GOPATH=${GOPATH:-$HOME/go}
+## if [ -d $GOPATH/bin ]; then
+##     path_append $GOPATH/bin;
+## fi
+
 # if you normally do `set -o vi',
 echo "set editing-mode vi" > ~/inputrc
 # When performing tab completion, a single tab attempts to partially complete the current word.
