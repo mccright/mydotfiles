@@ -35,9 +35,9 @@ function responsecode(){
 # Thank you Jinzhou Zhang
 # https://github.com/lotabout/dotfiles/blob/master/.profile
 # Bash toolbox.
-function path_remove ()  { export PATH=`echo -n $PATH | awk -v RS=: -v ORS=: '$0 != "'$1'"' | sed 's/:$//'`; }
-function path_append ()  { path_remove $1; export PATH="$PATH:$1"; }
-function path_prepend () { export PATH="$1:$PATH"; }
+function path_remove()  { export PATH=`echo -n $PATH | awk -v RS=: -v ORS=: '$0 != "'$1'"' | sed 's/:$//'`; }
+function path_append()  { path_remove $1; export PATH="$PATH:$1"; }
+function path_prepend() { export PATH="$1:$PATH"; }
 
 # Thank you Simon Eskildsen
 # https://github.com/sirupsen/dotfiles/blob/master/home/.bash/04_aliases.bash
@@ -64,7 +64,7 @@ function strip-whitespaces {
 # https://github.com/metebalci/simplehelpers/blob/master/todec_tohex.sh
 # converts hex to decimal
 # tr converts lower case to upper case first, bc accepts upper case only
-function todec {
+function todec() {
   uc=`echo $1 | tr '[:lower:]' '[:upper:]'`
   echo "ibase=16; $uc" | bc
 }
@@ -73,7 +73,7 @@ function todec {
 # https://github.com/metebalci/simplehelpers/blob/master/todec_tohex.sh
 # converts decimal to hex
 # tr converts upper case to lower case, just because
-function tohex {
+function tohex() {
   uc=`echo "obase=16; $1" | bc`
   echo $uc | tr '[:upper:]' '[:lower:]'
 }
