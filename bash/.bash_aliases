@@ -57,7 +57,7 @@ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(
 # useful especially for hex data such as keys, certificates
 # obviously it does not remove all the whitespaces but it can easily be improved
 function strip-whitespaces {
-  tr -d "\n" | tr -d " "
+  /usr/bin/tr -d "\n" | /usr/bin/tr -d " "
 }
 
 # Thank you Mete Balci (https://metebalci.com/)
@@ -65,8 +65,8 @@ function strip-whitespaces {
 # converts hex to decimal
 # tr converts lower case to upper case first, bc accepts upper case only
 function todec() {
-  uc=`echo $1 | tr '[:lower:]' '[:upper:]'`
-  echo "ibase=16; $uc" | bc
+  uc=`echo $1 | /usr/bin/tr '[:lower:]' '[:upper:]'`
+  echo "ibase=16; $uc" | /usr/bin/bc
 }
 
 # Thank you Mete Balci (https://metebalci.com/)
@@ -74,8 +74,15 @@ function todec() {
 # converts decimal to hex
 # tr converts upper case to lower case, just because
 function tohex() {
-  uc=`echo "obase=16; $1" | bc`
-  echo $uc | tr '[:upper:]' '[:lower:]'
+  uc=`echo "obase=16; $1" | /usr/bin/bc`
+  /usr/bin/echo $uc | /usr/bin/tr '[:upper:]' '[:lower:]'
+}
+
+# 'bc' seems to be available on all the hosts I use.
+# This makes using it on the command like easier.
+function calc() {
+  calcme=$1
+  /usr/bin/echo "$calcme" | /usr/bin/bc -l
 }
 
 # from: https://github.com/mccright/rand-notes/blob/master/Generate-random-data.md
@@ -84,6 +91,20 @@ function randpass(){  < /dev/urandom  tr -dc '_A-Za-z0-9!@#$%^&*,.=+~' | head -c
 # make installs easier 
 # thank you https://github.com/saulpw/dotfiles
 alias sagi='sudo apt-get install' $1
+
+# a better way to make installs easier
+# Thank you Tom Hudson
+# https://github.com/tomnomnom/dotfiles/blob/master/ubuntu-install.sh
+function install {
+  which $1 &> /dev/null
+
+  if [ $? -ne 0 ]; then
+    echo "Installing: ${1}..."
+    sudo apt-get install $1
+  else
+    echo "Already installed: ${1}"
+  fi
+}
 
 # some more ls aliases
 alias ll='ls -alF'
