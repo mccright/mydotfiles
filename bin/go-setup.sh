@@ -1,7 +1,9 @@
 #!/bin/bash
 # Thank you Tom Hudson
 # https://github.com/tomnomnom/dotfiles/blob/master/go-setup.sh
-VERSION="1.18"
+# VERSION="1.18"
+# Updated my std version 21-May-2023
+VERSION="1.20.4"
 
 source .bashrc
 wget https://storage.googleapis.com/golang/go$VERSION.linux-amd64.tar.gz
