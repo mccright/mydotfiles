@@ -1,5 +1,7 @@
 # Get the current weather
 # Needs: https://github.com/gourlaysama/girouette 
+# girouette requires an OpenWeather API key (free for 1 call per second)
+# You can sign up for that key at https://openweathermap.org/price
 # Depends on a config file in ~/.config/girouette/config.yml
 if [ -x ~/bin/girouette ]; then
         alias weather='/usr/bin/echo `~/bin/girouette`'
