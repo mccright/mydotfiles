@@ -1,4 +1,5 @@
 # Get the current weather
+# Needs: https://github.com/gourlaysama/girouette 
 # Depends on a config file in ~/.config/girouette/config.yml
 if [ -x ~/bin/girouette ]; then
         alias weather='/usr/bin/echo `~/bin/girouette`'
