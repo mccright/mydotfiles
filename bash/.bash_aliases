@@ -7,6 +7,20 @@ if [ -x ~/bin/girouette ]; then
         alias weather='/usr/bin/echo `~/bin/girouette`'
 fi
 
+#!/bin/sh
+# SUMMARY: Describe the current OS
+# I may visit a lot of different hosts throughout any given day.
+# The OS running on some of those hosts is managed by others.
+# Putting this in my .bashrc/.bash_aliases helps remind me of some 
+# important characteristics of the current server.
+function whatos() {
+SHORT_DISTRIB_DESC=$(lsb_release -s -d)
+CODE_NAME=$(lsb_release -c | awk '{print $2}')
+AVAILABLE_MEM=$(cat /proc/meminfo | grep -i memavailable | awk '{print $2}')
+#
+printf "Current OS: %s '%s' (%s %s %s) - %sK mem avail\n" "$SHORT_DISTRIB_DESC" "$CODE_NAME" "$(uname -o)" "$(uname -r)" "$(uname -m)" "$AVAILABLE_MEM"
+}
+
 #
 function updateos() {
 sudo apt-get update && sudo apt-get -y upgrade
