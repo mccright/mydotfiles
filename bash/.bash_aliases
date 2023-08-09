@@ -56,11 +56,13 @@ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(
 
 # Thank you Mete Balci (https://metebalci.com/)
 # https://github.com/metebalci/simplehelpers/blob/master/strip_whitespaces.sh
-# removes the line feed ("\n") and space (" ") charactes in stdin
-# useful especially for hex data such as keys, certificates
-# obviously it does not remove all the whitespaces but it can easily be improved
+# removes the line feed ("\n"), space (" "), tab ("\t"), vertical tab ("\v"), 
+# form feed ("\f") and carriage return ("\r") charactes in stdin.  It is 
+# useful especially for hex data such as keys, certificates.
+# It does not remove all the whitespace, but works for my typical use cases.
+# See: https://en.wikipedia.org/wiki/Whitespace_character for enhancement ideas
 function strip-whitespaces {
-  /usr/bin/tr -d "\n" | /usr/bin/tr -d " "
+  /usr/bin/tr -d "\n" | /usr/bin/tr -d " " | /usr/bin/tr -d "\t" | /usr/bin/tr -d "\v" | /usr/bin/tr -d "\f" | /usr/bin/tr -d "\r"
 }
 
 # Thank you Mete Balci (https://metebalci.com/)
