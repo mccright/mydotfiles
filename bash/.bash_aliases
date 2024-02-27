@@ -1,10 +1,25 @@
 # Get the current weather
+# FROM: https://github.com/mccright/weather-in-terminal
+# Depends on a config file in ~/.config/weather-in-terminal/weather.ini (or
+# other location, which you will specify on the command line)
+if [ -x ~/bin/weather.py ]; then
+        alias weatherp='/usr/bin/python3 ~/bin/weather.py -f ~/.config/weather-in-terminal/weather.ini'
+fi
+
+# Get the current weather
 # Thank you Antoine Gourlay https://github.com/gourlaysama/girouette 
 # girouette requires an OpenWeather API key (free for 1 call per second)
 # You can sign up for that key at https://openweathermap.org/price
 # Depends on a config file in ~/.config/girouette/config.yml
 if [ -x ~/bin/girouette ]; then
         alias weather='/usr/bin/echo `~/bin/girouette`'
+fi
+
+# Run the `todo` script.
+# Depends on a data file ~/.config/todo/.todo-list.json (or
+# other location, which you will specify on the command line)
+if [ -x ~/bin/todo.py ]; then
+        alias todo='/usr/bin/python3 ~/bin/todo.py $*'
 fi
 
 #!/bin/sh
