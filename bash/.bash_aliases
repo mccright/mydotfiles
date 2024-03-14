@@ -22,6 +22,19 @@ if [ -x ~/bin/todo.py ]; then
         alias todo='/usr/bin/python3 ~/bin/todo.py $*'
 fi
 
+# See which Python file I was last working on...
+# Scan recursively under home directory and identify the last modified Python file
+# thank you Corey Goldberg for the guts of this alias
+# I remove any files having "site-packages" in the path to avoid junk in virtual environments 
+# https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
+alias lasteditpy="find '${HOME}' -type f -name '*.py' -printf '%T@ %p\n' | grep -v "site-packages" | sort --numeric --stable --key=1 | tail -n 1 | cut -d' ' -f2"
+
+# Show last 25 modified files in your home dir (recursive)
+# Thank you Corey Goldberg for the guts of this alias
+# I remove any files "site-packages" & ".cache" in the path to avoid more junk 
+# https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
+alias latest="find . -type f -printf '%TY-%Tm-%Td %TR %p\n' 2>/dev/null | grep -v -E '(.git|site-packages|.cache|virtualenv)' | sort -n | tail -n 25 | sort -n -r"
+
 #!/bin/sh
 # SUMMARY: Describe the current OS
 # I may visit a lot of different hosts throughout any given day.
@@ -48,15 +61,94 @@ function refreshsystem() {
   sudo apt upgrade -y
 }
 
+# thank you Corey Goldberg
+# https://github.com/cgoldberg/sniff/
+alias sniff='curl -sS --compressed -o /dev/null -w "@sniff.txt" "$1"'
+
+# go back to previous directory
+# thank you Corey Goldberg
+# https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
+alias bk="cd ${OLDPWD}"
+
+# extract a tarball
+# thank you Corey Goldberg
+# https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
+alias untar="tar zxvf "
+
+# list dirs/files in tree format
+# thank you Corey Goldberg, this has been very helpful
+# https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
+alias tree="tree -ash -CF --du"
+
+# grep recursively with case-insensitive match and other defaults
+# thank you Corey Goldberg for the core of this, 
+# with some added 'excludes' it has been very helpful
+# https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
+alias rgrep="rgrep \
+        --binary-files=without-match \
+        --color=auto \
+        --devices=skip \
+        --ignore-case \
+        --line-number \
+        --no-messages \
+        --with-filename \
+        --exclude-dir=.cache \
+        --exclude-dir=.git \
+        --exclude-dir=.tox \
+		--exclude-dir=site-packages \
+		--exclude-dir=.mozilla \
+		--exclude-dir=npm \
+		--exclude-dir=.npm \
+		--exclude-dir=node_modules 
+        --exclude-dir=".mypy_cache" \
+        --exclude-dir="__snapshots__" \
+        --exclude-dir="dist" \
+        --exclude-dir="cypress" \
+        --exclude="tslint.json" \
+        --exclude="*.min.js" \
+        --exclude="*.pyc" \
+        --exclude="*.swp" \
+        --exclude=*.css \
+        --exclude=*.js \
+        --exclude=*.svg"
+alias rg="rgrep"
+
+
+
+# purge thumbnail cache
+# thank you Corey Goldberg
+# https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
+alias purge-thumbs="rm -rf ${HOME}/.cache/thumbnails"
+
+# count installed system packages
+alias countpackages="dpkg -l | grep '^ii' | wc -l"
+
+# make yourself look busy and fancy --> to non-technical people
+# thank you Corey Goldberg
+# https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
+alias busy="cat /dev/urandom | hexdump -C | grep --color=always 'ca fe'"
+
 # 3 ways to print your 'external'/Internet-visable IP address
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com' 
 
 alias externalip='curl https://ipinfo.io/ip; echo "";'
+# also need my local IP address sometimes
+alias localip="hostname -I"
 
 function myexternalip() { 
     curl https://ipinfo.io/ip;
     echo "";
 }
+
+# show TCP and UDP sockets that are actively listening
+# thank you Corey Goldberg, this has been very helpful
+# https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
+alias listening="sudo netstat --listening --program --symbolic --tcp --udp"
+
+# serve current directory over HTTP on port 8080
+# thank you Corey Goldberg
+# https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
+alias webserver="python3 -m http.server 8080"
 
 
 # Check on definition of a given http response code
@@ -140,11 +232,71 @@ function install {
   fi
 }
 
+
+# Still testing this approach
+# Thank you Corey Goldberg
+# activate Python 3.x virtual environment in ./venv (create fresh one if needed)
+venv3 () {
+    local dir="venv"
+    local pyversion="Python 3.x"
+    if [[ ! -d ./${dir} ]]; then
+        echo "creating ${pyversion} virtual environment in ./${dir}"
+        python3 -m venv "${dir}"
+    fi
+    echo "activating ${pyversion} virtual environment in ./${dir}"
+    source ./${dir}/bin/activate
+}
+
+# Still testing this approach
+# Thank you Corey Goldberg
+# search command history by regex (case-insensitive) show last n matches
+# usage: hist <pattern>
+hist () {
+    local n="50"
+    history | grep -i --color=always "$1" | tail -n "$n"
+}
+
+# Still working on this approach
+# Thank you Corey Goldberg
+# open a browser and search with Google
+google () {
+    python -c "import webbrowser; webbrowser.open('https://www.google.com/search?q=${1}')" > /dev/null 2>&1
+}
+alias goog="google"
+
+
+# Still working on this approach
+# Replaced OS code name string with something dynamic 
+# Thank you Corey Goldberg
+# open a browser and go to the Ubuntu Packages page for the given package name
+pkg-info () {
+	python3 -c "import webbrowser; webbrowser.open('https://packages.ubuntu.com/$(/usr/bin/lsb_release -c | /usr/bin/awk '{print $2}')/${1}')" > /dev/null 2>&1
+}
+
+
+#  ¯\_(ツ)_/¯
+# Used in screen-sharing/presentation contexts  
+# Thank you Corey Goldberg
+alias shrug="echo -n '¯\_(ツ)_/¯'"
+
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# These three WSL functions are not portable...
+# but I use them a lot, so I include them here.  
+# I have to edit the file system data 
+# in each function below for each of my endpoints.
+# 
+# Move current directory to my Files directory on WSL
+function files() { cd /mnt/c/Files; }
+# Move current directory to my documents on WSL
+function docs() { cd /mnt/c/Files/my-docs; }
+# Move current directory to my github repos on WSL
+function github() { cd /mnt/c/Files/dev/github; }
+#
 # Add an "alert" alias for long running commands. Use like so: 
 #   sleep 10; alert
 # You may need: 'sudo apt install libnotify-bin'
@@ -175,6 +327,23 @@ alias serv='python3 -m http.server 4321'
 alias biggestdir="du -h --max-depth=1 | sort -h"
 # and for 
 alias follow="tail -f -n +1"
+
+
+# search recursively under current directory for filenames matching pattern (case-insensitive)
+findfiles () {
+    find . -xdev \
+           -iname "*$1*" \
+           ! -path "./.git/*" \
+           ! -path "./.tox/*" \
+           ! -path "./.vscode-server/*" \
+           ! -path "./.cache/*" \
+           ! -path "./.dotnet/*" \
+           ! -path "./.local/*" \
+           ! -path "./env/*" \
+           ! -path "./ENV/*" |
+           grep -i --color=always "$1"
+}
+alias ff="findfiles"
 
 # FROM: https://github.com/jaesivsm/dotfiles/blob/master/files/bash/bash_aliases
 function grepk() {
