@@ -296,7 +296,7 @@ function files() { cd /mnt/c/Files; }
 function docs() { cd /mnt/c/Files/my-docs; }
 # Move current directory to my github repos on WSL
 function github() { cd /mnt/c/Files/dev/github; }
-#
+
 # Add an "alert" alias for long running commands. Use like so: 
 #   sleep 10; alert
 # You may need: 'sudo apt install libnotify-bin'
