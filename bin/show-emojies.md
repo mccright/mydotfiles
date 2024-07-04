@@ -1,12 +1,16 @@
 Testing some UTF codes from: https://github.com/thoppe/LigaturaObscura  
 
 --- test start ---  
-U+1F600 == grinningface
+
+```
+U+1F600 == grinningface  
 U+1F493 == love  
 U+1F4BB == computer  
 U+1F3A8 == artist  
 uni2728 == magic  
 U+1F3E1 == house  
+```
+
 ---- test end ----  
 
 
