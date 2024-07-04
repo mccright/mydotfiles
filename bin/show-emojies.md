@@ -1,5 +1,10 @@
 Testing some UTF codes from: https://github.com/thoppe/LigaturaObscura  
-
+and from https://www.unicode.org/Public/draft/emoji/emoji-test.txt  
+and from https://unicode.org/emoji/charts/full-emoji-list.html  
+and from https://www.unicode.org/Public/draft/UCD/ucd/emoji/emoji-data.txt
+and from https://www.unicode.org/Public/draft/emoji/emoji-sequences.txt  
+and from https://www.unicode.org/Public/draft/UCD/ucd/emoji/emoji-variation-sequences.txt  
+and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schools.com/charsets/ref_html_entities_a.asp and https://gist.github.com/mayurchhapra/3508291362c42d983fe5774e71f70207    
 
 <div>
 <p>&#x1F600; == grinningface<br>
@@ -268,59 +273,59 @@ Testing some UTF codes from: https://github.com/thoppe/LigaturaObscura
 
 
 ### subgroup: music
-&#x1F3BC; ==  🎼 musical score<br>
-&#x1F3B5; ==  🎵 musical note<br>
-&#x1F3B6; ==  🎶 musical notes<br>
-&#x1F399; ==  🎙 studio microphone<br>
-&#x1F39A; ==  🎚 level slider<br>
-&#x1F39B; ==  🎛 control knobs<br>
-&#x1F3A4; ==  🎤 microphone<br>
-&#x1F3A7; ==  🎧 headphone<br>
-&#x1F4FB; ==  📻 radio<br>
+&#x1F3BC; == musical score<br>
+&#x1F3B5; == musical note<br>
+&#x1F3B6; == musical notes<br>
+&#x1F399; == studio microphone<br>
+&#x1F39A; == level slider<br>
+&#x1F39B; == control knobs<br>
+&#x1F3A4; == microphone<br>
+&#x1F3A7; == headphone<br>
+&#x1F4FB; == radio<br>
 
 ### subgroup: musical-instrument  
-&#x1F3B7; ==  🎷 saxophone<br>
-&#x1FA97; ==  🪗 accordion<br>
-&#x1F3B8; ==  🎸 guitar<br>
-&#x1F3B9; ==  🎹 musical keyboard<br>
-&#x1F3BA; ==  🎺 trumpet<br>
-&#x1F3BB; ==  🎻 violin<br>
-&#x1FA95; ==  🪕 banjo<br>
-&#x1F941; ==  🥁 drum<br>
-&#x1FA98; ==  🪘 long drum<br>
-&#x1FA87; ==  🪇 maracas<br>
-&#x1FA88; ==  🪈 flute<br>
-&#x1FA89; ==  🪉 harp<br>
+&#x1F3B7; == saxophone<br>
+&#x1FA97; == accordion<br>
+&#x1F3B8; == guitar<br>
+&#x1F3B9; == musical keyboard<br>
+&#x1F3BA; == trumpet<br>
+&#x1F3BB; == violin<br>
+&#x1FA95; == banjo<br>
+&#x1F941; == drum<br>
+&#x1FA98; == long drum<br>
+&#x1FA87; == maracas<br>
+&#x1FA88; == flute<br>
+&#x1FA89; == harp<br>
 
 ### subgroup: phone
-&#x1F4F1; ==  📱 mobile phone<br>
-&#x1F4F2; ==  📲 mobile phone with arrow<br>
-&#x260E; ==  ☎ telephone<br>
-&#x1F4DE; ==  📞 telephone receiver<br>
-&#x1F4DF; ==  📟 pager<br>
-&#x1F4E0; ==  📠 fax machine<br>
+&#x1F4F1; == mobile phone<br>
+&#x1F4F2; == mobile phone with arrow<br>
+&#x260E; == telephone<br>
+&#x1F4DE; == telephone receiver<br>
+&#x1F4DF; == pager<br>
+&#x1F4E0; == fax machine<br>
 
 ### subgroup: computer
-&#x1F50B; ==  🔋 battery<br>
-&#x1FAAB; ==  🪫 low battery<br>
-&#x1F50C; ==  🔌 electric plug<br>
-&#x1F4BB; ==  💻 laptop<br>
-&#x1F5A5; ==  🖥 desktop computer<br>
-&#x1F5A8; ==  🖨 printer<br>
-&#x27328; ==  ⌨ keyboard<br>
-&#x1F5B1; ==  🖱 computer mouse<br>
-&#x1F5B2; ==  🖲 trackball<br>
-&#x1F4BD; ==  💽 computer disk<br>
-&#x1F4BE; ==  💾 floppy disk<br>
-&#x1F4BF; ==  💿 optical disk<br>
-&#x1F4C0; ==  📀 dvd<br>
-&#x1F9EE; ==  🧮 abacus<br>
+&#x1F50B; == battery<br>
+&#x1FAAB; == low battery<br>
+&#x1F50C; == electric plug<br>
+&#x1F4BB; == laptop<br>
+&#x1F5A5; == desktop computer<br>
+&#x1F5A8; == printer<br>
+&#x27328; == keyboard<br>
+&#x1F5B1; == computer mouse<br>
+&#x1F5B2; == trackball<br>
+&#x1F4BD; == computer disk<br>
+&#x1F4BE; == floppy disk<br>
+&#x1F4BF; == optical disk<br>
+&#x1F4C0; == dvd<br>
+&#x1F9EE; == abacus<br>
 
 ### subgroup: light & video
-&#x1F3A5; ==  🎥 movie camera<br>
-&#x1F39E; ==  🎞 film frames<br>
-&#x1F4FD; ==  📽 film projector<br>
-&#x1F3AC; ==  🎬 clapper board<br>
+&#x1F3A5; == movie camera<br>
+&#x1F39E; == film frames<br>
+&#x1F4FD; == film projector<br>
+&#x1F3AC; == clapper board<br>
 &#x1F4FA; ==  📺 television<br>
 &#x1F4F7; ==  📷 camera<br>
 &#x1F4F8; ==  📸 camera with flash<br>
