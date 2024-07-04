@@ -10,12 +10,12 @@ uni2728; == magic
 U+1F3E1; == house  
 
 <html>
-<p>&1F600; == grinningface<br>
-&1F493; == love<br>
-&1F4BB; == computer<br>
-&1F3A8; == artist<br>
-&2728; == magic<br>
-&1F3E1; == house</p>
+<p>&x1F600; == grinningface<br>
+&x1F493; == love<br>
+&x1F4BB; == computer<br>
+&x1F3A8; == artist<br>
+&x2728; == magic<br>
+&x1F3E1; == house</p>
 
 ---- test end ----  
 
