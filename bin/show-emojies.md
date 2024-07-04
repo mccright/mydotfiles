@@ -9,13 +9,14 @@ U+1F3A8; == artist
 uni2728; == magic  
 U+1F3E1; == house  
 
-<html>
-<p>&x1F600; == grinningface<br>
-&x1F493; == love<br>
-&x1F4BB; == computer<br>
-&x1F3A8; == artist<br>
-&x2728; == magic<br>
-&x1F3E1; == house</p>
+<div>
+<p>&#x1F600; == grinningface<br>
+&#x1F493; == love<br>
+&#x1F4BB; == computer<br>
+&#x1F3A8; == artist<br>
+&#x2728; == magic<br>
+&#x1F3E1; == house</p>
+</div>
 
 ---- test end ----  
 
