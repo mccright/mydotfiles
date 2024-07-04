@@ -8,30 +8,32 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 
 <div>
 <p>&#x1F600; == grinningface<br>
-&#x1F493; == love<br>
-
+&#x1F4A9; == poop<br>
+&#x1F577; == spider<br>
+&#x1F4AA; == flex<br>
+&#x1F525; == fire<br>
+&#x1F527; == wrench<br>
+&#x1F528; == hammer<br>
 &#x1F493; == love<br>
 &#x1F4BB; == computer<br>
 &#x1F3A8; == artist<br>
 &#x2728; == magic<br>
 &#x1F3E1; == house<br>
-    
 &#x23F0; == alarm<br>
 &#x23F1; == stopwatch<br>
 &#x23F2; == timer<br>
 &#x23F3; == hourglass<br>
 &#x2601; == cloud<br>
 &#x2602; == umbrella<br>
-&#x2618; == shamrock<br>
 &#x2620; == crossbones<br>
 &#x2622; == radioactive<br>
-&#x2623; == biohazard<br>
-&#x267B; == recycling<br>
-&#x267F; == wheelchair<br>
-&#x2694; == swords<br>
 &#x269B; == atom<br>
 &#x26A0; == warning<br>
-&#x26B0; == coffin<br>
+&#x2623; == biohazard<br>
+&#x267B; == recycling<br>
+&#x2618; == shamrock<br>
+&#x267F; == wheelchair<br>
+&#x2694; == swords<br>
 &#x26BD; == soccer<br>
 &#x26BE; == baseball<br>
 &#x26C4; == snowman<br>
@@ -152,27 +154,19 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F453; == eyeglasses<br>
 &#x1F454; == necktie<br>
 &#x1F458; == kimono<br>
-&#x1F459; == bikini<br>
 &#x1F45B; == purse<br>
 &#x1F46E; == police<br>
 &#x1F476; == baby<br>
 &#x1F47B; == ghost<br>
 &#x1F47D; == alien<br>
 &#x1F480; == skull<br>
-&#x1F483; == dancer<br>
 &#x1F484; == lipstick<br>
 &#x1F487; == haircut<br>
 &#x1F488; == barber<br>
 &#x1F489; == syringe<br>
-&#x1F48F; == kiss<br>
 &#x1F492; == wedding<br>
 &#x1F4A3; == bomb<br>
 &#x1F4A7; == droplet<br>
-&#x1F4A9; == poop<br>
-&#x1F4AA; == flex<br>
-&#x1F525; == fire<br>
-&#x1F527; == wrench<br>
-&#x1F528; == hammer<br>
 &#x1F52B; == pistol<br>
 &#x1F52C; == microscope<br>
 &#x1F52D; == telescope<br>
@@ -181,7 +175,6 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F54D; == synagogue<br>
 &#x1F54E; == menorah<br>
     
-&#x1F577; == spider<br>
 &#x1F579; == joystick<br>
     
 &#x1F57A; == dancing<br>
@@ -433,8 +426,8 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x276CF; ==  ⛏ pick<br><br>
 &#x27692; ==  ⚒ hammer and pick<br>
 &#x1F6E0; ==  🛠 hammer and wrench<br>
-&#x1F5E1; ==  🗡 dagger<br><br>
-&#x27694 ; ==  ⚔ crossed swords<br>
+&#x1F5E1; == 🗡 dagger<br>
+&#x27694; == ⚔ crossed swords<br>
 &#x1F4A3; ==  💣 bomb<br>
 &#x1FA83; ==  🪃 boomerang<br>
 &#x1F3F9; ==  🏹 bow and arrow<br>
@@ -452,8 +445,8 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1FA9D; ==  🪝 hook<br>
 &#x1F9F0; ==  🧰 toolbox<br>
 &#x1F9F2; ==  🧲 magnet<br>
-&#x1FA9C; ==  🪜 ladder<br>
-&#x1FA8F; ==  🪏 shovel<br>
+&#x1FA9C; == 🪜 ladder<br>
+&#x1FA8F; == shovel<br>
 
 ### subgroup: science
 &#x27697; ==  ⚗ alembic<br>
@@ -529,7 +522,7 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F6C5; ==  🛅 left luggage<br>
 
 ### subgroup: warning
-&#x276A0; ==  ⚠ warning<br>
+&#x26A0; ==  ⚠ warning<br>
 &#x1F6B8; ==  🚸 children crossing<br>
 &#x276D4; ==  ⛔ no entry<br>
 &#x1F6AB; ==  🚫 prohibited<br>
@@ -540,8 +533,8 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F6B7; ==  🚷 no pedestrians<br>
 &#x1F4F5; ==  📵 no mobile phones<br>
 &#x1F51E; ==  🔞 no one under eighteen<br>
-&#x27622; ==  ☢ radioactive<br>
-&#x27623; ==  ☣ biohazard<br>
+&#x2622; ==  ☢ radioactive<br>
+&#x2623; ==  ☣ biohazard<br>
 
 ### subgroup: arrow
 &#x27B06; ==  ⬆️ up arrow<br>
@@ -568,7 +561,7 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 
 ### subgroup: religion
 &#x1F6D0; ==  🛐 place of worship<br>
-&#x2769B; ==  ⚛ atom symbol<br>
+&#x269B; ==  ⚛ atom symbol<br>
 &#x1F549; ==  🕉 om<br>
 &#x2721; ==  ✡ star of David<br>
 &#x27638; ==  ☸ wheel of dharma<br>
@@ -582,19 +575,19 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1FAAF; ==  🪯 khanda<br>
 
 ### subgroup: zodiac
-&#x27648; ==  ♈ Aries<br>
-&#x27649; ==  ♉ Taurus<br>
-&#x2764A; ==  ♊ Gemini<br>
-&#x2764B; ==  ♋ Cancer<br>
-&#x2764C; ==  ♌ Leo<br>
-&#x2764D; ==  ♍ Virgo<br>
-&#x2764E; ==  ♎ Libra<br>
-&#x2764F; ==  ♏ Scorpio<br>
-&#x27650; ==  ♐ Sagittarius<br>
-&#x27651; ==  ♑ Capricorn<br>
-&#x27652; ==  ♒ Aquarius<br>
-&#x27653; ==  ♓ Pisces<br>
-&#x276CE; ==  ⛎ Ophiuchus<br>
+&#x2648; ==  ♈ Aries<br>
+&#x2649; ==  ♉ Taurus<br>
+&#x264A; ==  ♊ Gemini<br>
+&#x264B; ==  ♋ Cancer<br>
+&#x264C; ==  ♌ Leo<br>
+&#x264D; ==  ♍ Virgo<br>
+&#x264E; ==  ♎ Libra<br>
+&#x264F; ==  ♏ Scorpio<br>
+&#x2650; ==  ♐ Sagittarius<br>
+&#x2651; ==  ♑ Capricorn<br>
+&#x2652; ==  ♒ Aquarius<br>
+&#x2653; ==  ♓ Pisces<br>
+&#x26CE; ==  ⛎ Ophiuchus<br>
 
 ### subgroup: av-symbol
 &#x1F500; ==  🔀 shuffle tracks button<br>
