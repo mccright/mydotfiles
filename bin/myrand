@@ -2,7 +2,7 @@
 # There are many reasons to need a little 'random' data quickly
 # I use base64 output because it is more compatible with 
 # my console behaviors.  You could remove it on line 22 
-# and the script would emit binary output again.  
+# and the script would emit binary output again. &#x1F600;  
 
 limit=4092
 
