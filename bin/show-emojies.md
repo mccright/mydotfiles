@@ -1,11 +1,11 @@
 Testing some UTF codes from: https://github.com/thoppe/LigaturaObscura  
 
 --- test start ---  
-u1F493 : love  
-u1F4BB : computer  
-u1F3A8 : artist  
+U+1F493 : love  
+U+1F4BB : computer  
+U+1F3A8 : artist  
 uni2728 : magic  
-u1F3E1 : house  
+U+1F3E1 : house  
 ---- test end ----  
 
 
