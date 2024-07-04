@@ -408,6 +408,7 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F587; ==  🖇 linked paperclips<br>
 &#x1F4CF; ==  📏 straight ruler<br>
 &#x1F4D0; ==  📐 triangular ruler<br><br>
+&#x2702;&#xFE0F; == scissors<br>
 &#x2702; ==  ✂ scissors<br>
 &#x1F5C3; ==  🗃 card file box<br>
 &#x1F5C4; ==  🗄 file cabinet<br>
@@ -450,7 +451,7 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1FA8F; == shovel<br>
 
 ### subgroup: science
-&#x27697; ==  ⚗ alembic<br>
+&#x2697;&#xFE0F; ==  ⚗ alembic<br>
 &#x1F9EA; ==  🧪 test tube<br>
 &#x1F9EB; ==  🧫 petri dish<br>
 &#x1F9EC; ==  🧬 dna<br>
@@ -662,25 +663,25 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x2733; ==  ✳ eight-spoked asterisk<br>
 &#x2734; ==  ✴ eight-pointed star<br>
 &#x2747; ==  ❇ sparkle<br>
-&#x00A9; ==  © copyright<br>
-&#x00AE; ==  ® registered<br>
-&#x2122; ==  ™ trade mark<br>
+&#x00A9;&#xFE0F; ==  © copyright<br>
+&#x00AE;&#xFE0F; ==  ® registered<br>
+&#x2122;&#xFE0F; ==  ™ trade mark<br>
 &#x1FADF; ==  🫟 splatter<br>
 
 ### subgroup: keycap
 &#x0023;&#xFE0F;&#x20E3; == keycap: #<br>
 &#x002A;&#xFE0F;&#x20E3; == keycap: *<br>
 &#x0030;&#xFE0F;&#x20E3; == keycap: 0<br>
-&#x0031; ==  1️⃣ keycap: 1<br>
-&#x0032; ==  2️⃣ keycap: 2<br>
-&#x0033; ==  3️⃣ keycap: 3<br>
-&#x0034; ==  4️⃣ keycap: 4<br>
-&#x0035; ==  5️⃣ keycap: 5<br>
-&#x0036; ==  6️⃣ keycap: 6<br>
-&#x0037; ==  7️⃣ keycap: 7<br>
-&#x0038; ==  8️⃣ keycap: 8<br>
-&#x0039; ==  9️⃣ keycap: 9<br>
-&#x1F51F; ==  🔟 keycap: 10<br>
+&#x0031;&#xFE0F;&#x20E3; == keycap: 1<br>
+&#x0032;&#xFE0F;&#x20E3; == keycap: 2<br>
+&#x0033;&#xFE0F;&#x20E3; == keycap: 3<br>
+&#x0034;&#xFE0F;&#x20E3; == keycap: 4<br>
+&#x0035;&#xFE0F;&#x20E3; == keycap: 5<br>
+&#x0036;&#xFE0F;&#x20E3; == keycap: 6<br>
+&#x0037;&#xFE0F;&#x20E3; == keycap: 7<br>
+&#x0038;&#xFE0F;&#x20E3; == keycap: 8<br>
+&#x0039;&#xFE0F;&#x20E3; == keycap: 9<br>
+&#x1F51F; == keycap: 10<br>
 
 ### subgroup: alphanum
 &#x1F520; ==  🔠 input latin uppercase<br>
@@ -766,8 +767,8 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F6A9; ==  triangular flag<br>
 &#x1F38C; ==  crossed flags<br>
 &#x1F3F4; ==  black flag<br>
-&#x1F3F3; ==  white flag<br>
-&#x1F3F4; ==  pirate flag?<br>
+&#x1F3F3;&#xFE0F; ==  white flag<br>
+&#x1F3F4;&#x200D;&#x2620;&#xFE0F; ==  pirate flag<br>
 
 </div>
 
@@ -775,5 +776,12 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F6A9; ==  triangular flag  
 &#x1F38C; ==  crossed flags  
 &#x1F3F4; ==  black flag  
-&#x1F3F3; ==  white flag  
-&#x1F3F4; ==  pirate flag?  
+&#x1F3F3;&#xFE0F; ==  white flag  
+&#x1F3F3;&#xFE0F;&#x200D;&#x1F308; == rainbow flag  
+&#x1F3F4;&#x200D;&#x2620;&#xFE0F; ==  pirate flag  
+&#x1F1E8;&#x1F1F1; == flag: Chile  
+&#x1F1ED;&#x1F1F0; == flag: Hong Kong  
+&#x1F1EE;&#x1F1F3; == flag: India  
+&#x1F1F2;&#x1F1FD; == flag: Mexico  
+&#x1F1E7;&#x1F1F7; == flag: Brazil  
+&#x1F3F4;&#xE0067;&#xE0062;&#xE0065;&#xE006E;&#xE0067;&#xE007F; == flag: England  
