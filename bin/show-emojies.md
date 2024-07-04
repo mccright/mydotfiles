@@ -305,7 +305,7 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F4BB; == laptop<br>
 &#x1F5A5; == desktop computer<br>
 &#x1F5A8; == printer<br>
-&#x27328; == keyboard<br>
+&#x2328; == keyboard<br>
 &#x1F5B1; == computer mouse<br>
 &#x1F5B2; == trackball<br>
 &#x1F4BD; == computer disk<br>
@@ -423,11 +423,11 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 # subgroup: tool
 &#x1F528; ==  🔨 hammer<br>
 &#x1FA93; ==  🪓 axe<br><br>
-&#x276CF; ==  ⛏ pick<br><br>
-&#x27692; ==  ⚒ hammer and pick<br>
+&#x26CF; ==  ⛏ pick<br><br>
+&#x2692; ==  ⚒ hammer and pick<br>
 &#x1F6E0; ==  🛠 hammer and wrench<br>
 &#x1F5E1; == 🗡 dagger<br>
-&#x27694; == ⚔ crossed swords<br>
+&#x2694; == ⚔ crossed swords<br>
 &#x1F4A3; ==  💣 bomb<br>
 &#x1FA83; ==  🪃 boomerang<br>
 &#x1F3F9; ==  🏹 bow and arrow<br>
@@ -436,12 +436,12 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F527; ==  🔧 wrench<br>
 &#x1FA9B; ==  🪛 screwdriver<br>
 &#x1F529; ==  🔩 nut and bolt<br>
-&#x27699; ==  ⚙ gear<br>
+&#x2699; ==  ⚙ gear<br>
 &#x1F5DC; ==  🗜 clamp<br>
-&#x27696; ==  ⚖ balance scale<br>
+&#x2696; ==  ⚖ balance scale<br>
 &#x1F9AF; ==  🦯 white cane<br>
 &#x1F517; ==  🔗 link<br>
-&#x276D3; ==  ⛓ chains<br>
+&#x26D3; ==  ⛓ chains<br>
 &#x1FA9D; ==  🪝 hook<br>
 &#x1F9F0; ==  🧰 toolbox<br>
 &#x1F9F2; ==  🧲 magnet<br>
@@ -495,9 +495,9 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 
 # subgroup: other-object
 &#x1F6AC; ==  🚬 cigarette<br>
-&#x276B0; ==  ⚰ coffin<br>
+&#x26B0; ==  ⚰ coffin<br>
 &#x1FAA6; ==  🪦 headstone<br>
-&#x276B1; ==  ⚱ funeral urn<br>
+&#x26B1; ==  ⚱ funeral urn<br>
 &#x1F9FF; ==  🧿 nazar amulet<br>
 &#x1FAAC; ==  🪬 hamsa<br>
 &#x1F5FF; ==  🗿 moai<br>
@@ -510,7 +510,7 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F3E7; ==  🏧 ATM sign<br>
 &#x1F6AE; ==  🚮 litter in bin sign<br>
 &#x1F6B0; ==  🚰 potable water<br>
-&#x2767F; ==  ♿ wheelchair symbol<br>
+&#x267F; ==  ♿ wheelchair symbol<br>
 &#x1F6B9; ==  🚹 men’s room<br>
 &#x1F6BA; ==  🚺 women’s room<br>
 &#x1F6BB; ==  🚻 restroom<br>
@@ -524,7 +524,7 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 ### subgroup: warning
 &#x26A0; ==  ⚠ warning<br>
 &#x1F6B8; ==  🚸 children crossing<br>
-&#x276D4; ==  ⛔ no entry<br>
+&#x26D4; ==  ⛔ no entry<br>
 &#x1F6AB; ==  🚫 prohibited<br>
 &#x1F6B3; ==  🚳 no bicycles<br>
 &#x1F6AD; ==  🚭 no smoking<br>
@@ -537,20 +537,20 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x2623; ==  ☣ biohazard<br>
 
 ### subgroup: arrow
-&#x27B06; ==  ⬆️ up arrow<br>
-&#x27197; ==  ↗️ up-right arrow<br>
+&#x2B06; ==  ⬆️ up arrow<br>
+&#x2197; ==  ↗️ up-right arrow<br>
 &#x27A1; ==  ➡ right arrow<br>
-&#x27198; ==  ↘️ down-right arrow<br>
-&#x27B07; ==  ⬇️ down arrow<br>
-&#x27199; ==  ↙️ down-left arrow<br>
-&#x27B05; ==  ⬅️ left arrow<br>
-&#x27196; ==  ↖️ up-left arrow<br>
-&#x27195; ==  ↕ up-down arrow<br>
-&#x27194; ==  ↔ left-right arrow<br>
-&#x271A9; ==  ↩️ right arrow curving left<br>
-&#x271AA; ==  ↪️ left arrow curving right<br>
-&#x27934; ==  ⤴️ right arrow curving up<br>
-&#x27935; ==  ⤵️ right arrow curving down<br>
+&#x2198; ==  ↘️ down-right arrow<br>
+&#x2B07; ==  ⬇️ down arrow<br>
+&#x2199; ==  ↙️ down-left arrow<br>
+&#x2B05; ==  ⬅️ left arrow<br>
+&#x2196; ==  ↖️ up-left arrow<br>
+&#x2195; ==  ↕ up-down arrow<br>
+&#x2194; ==  ↔ left-right arrow<br>
+&#x21A9; ==  ↩️ right arrow curving left<br>
+&#x21AA; ==  ↪️ left arrow curving right<br>
+&#x2934; ==  ⤴️ right arrow curving up<br>
+&#x2935; ==  ⤵️ right arrow curving down<br>
 &#x1F503; ==  🔃 clockwise vertical arrows<br>
 &#x1F504; ==  🔄 counterclockwise arrows button<br>
 &#x1F519; ==  🔙 BACK arrow<br>
@@ -564,12 +564,12 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x269B; ==  ⚛ atom symbol<br>
 &#x1F549; ==  🕉 om<br>
 &#x2721; ==  ✡ star of David<br>
-&#x27638; ==  ☸ wheel of dharma<br>
-&#x2762F; ==  ☯ yin yang<br>
+&#x2638; ==  ☸ wheel of dharma<br>
+&#x262F; ==  ☯ yin yang<br>
 &#x271D; ==  ✝ latin cross<br>
-&#x27626; ==  ☦ orthodox cross<br>
-&#x2762A; ==  ☪ star and crescent<br>
-&#x2762E; ==  ☮ peace symbol<br>
+&#x2626; ==  ☦ orthodox cross<br>
+&#x262A; ==  ☪ star and crescent<br>
+&#x262E; ==  ☮ peace symbol<br>
 &#x1F54E; ==  🕎 menorah<br>
 &#x1F52F; ==  🔯 dotted six-pointed star<br>
 &#x1FAAF; ==  🪯 khanda<br>
@@ -593,21 +593,21 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F500; ==  🔀 shuffle tracks button<br>
 &#x1F501; ==  🔁 repeat button<br>
 &#x1F502; ==  🔂 repeat single button<br>
-&#x275B6; ==  ▶ play button<br>
-&#x273E9; ==  ⏩ fast-forward button<br>
-&#x273ED; ==  ⏭ next track button<br>
-&#x273EF; ==  ⏯ play or pause button<br>
-&#x275C0; ==  ◀ reverse button<br>
-&#x273EA; ==  ⏪ fast reverse button<br>
-&#x273EE; ==  ⏮ last track button<br>
+&#x25B6; ==  ▶ play button<br>
+&#x23E9; ==  ⏩ fast-forward button<br>
+&#x23ED; ==  ⏭ next track button<br>
+&#x23EF; ==  ⏯ play or pause button<br>
+&#x25C0; ==  ◀ reverse button<br>
+&#x23EA; ==  ⏪ fast reverse button<br>
+&#x23EE; ==  ⏮ last track button<br>
 &#x1F53C; ==  🔼 upwards button<br>
-&#x273EB; ==  ⏫ fast up button<br>
+&#x23EB; ==  ⏫ fast up button<br>
 &#x1F53D; ==  🔽 downwards button<br>
-&#x273EC; ==  ⏬ fast down button<br>
-&#x273F8; ==  ⏸ pause button<br>
-&#x273F9; ==  ⏹ stop button<br>
-&#x273FA; ==  ⏺ record button<br>
-&#x273CF; ==  ⏏ eject button<br>
+&#x23EC; ==  ⏬ fast down button<br>
+&#x23F8; ==  ⏸ pause button<br>
+&#x23F9; ==  ⏹ stop button<br>
+&#x23FA; ==  ⏺ record button<br>
+&#x23CF; ==  ⏏ eject button<br>
 &#x1F3A6; ==  🎦 cinema<br>
 &#x1F505; ==  🔅 dim button<br>
 &#x1F506; ==  🔆 bright button<br>
@@ -617,9 +617,9 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F4F4; ==  📴 mobile phone off<br>
 
 ### subgroup: gender<br>
-&#x27640; ==  ♀ female sign<br>
-&#x27642; ==  ♂ male sign<br>
-&#x276A7; ==  ⚧ transgender symbol<br>
+&#x2640; ==  ♀ female sign<br>
+&#x2642; ==  ♂ male sign<br>
+&#x26A7; ==  ⚧ transgender symbol<br>
 
 ### subgroup: math<br>
 &#x2716; ==  ✖ multiply<br>
@@ -627,11 +627,11 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x2796; ==  ➖ minus<br>
 &#x2797; ==  ➗ divide<br>
 &#x1F7F0; ==  🟰 heavy equals sign<br>
-&#x2767E; ==  ♾ infinity<br>
+&#x267E; ==  ♾ infinity<br>
 
 ### subgroup: punctuation
-&#x2703C; ==  ‼ double exclamation mark<br>
-&#x27049; ==  ⁉ exclamation question mark<br>
+&#x203C; ==  ‼ double exclamation mark<br>
+&#x2049; ==  ⁉ exclamation question mark<br>
 &#x2753; ==  ❓ red question mark<br>
 &#x2754; ==  ❔ white question mark<br>
 &#x2755; ==  ❕ white exclamation mark<br>
@@ -643,15 +643,15 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F4B2; ==  💲 heavy dollar sign<br>
 
 ### subgroup: other-symbol
-&#x27695; ==  ⚕ medical symbol<br>
-&#x2767B; ==  ♻ recycling symbol<br>
-&#x2769C; ==  ⚜ fleur-de-lis<br>
+&#x2695; ==  ⚕ medical symbol<br>
+&#x267B; ==  ♻ recycling symbol<br>
+&#x269C; ==  ⚜ fleur-de-lis<br>
 &#x1F531; ==  🔱 trident emblem<br>
 &#x1F4DB; ==  📛 name badge<br>
 &#x1F530; ==  🔰 Japanese symbol for beginner<br>
-&#x27B55; ==  ⭕ hollow red circle<br>
+&#x2B55; ==  ⭕ hollow red circle<br>
 &#x2705; ==  ✅ check mark button<br>
-&#x27611; ==  ☑ check box with check<br>
+&#x2611; ==  ☑ check box with check<br>
 &#x2714; ==  ✔ check mark<br>
 &#x274C; ==  ❌ cross mark<br>
 &#x274E; ==  ❎ cross mark button<br>
@@ -663,7 +663,7 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x2747; ==  ❇ sparkle<br>
 &#x00A9; ==  © copyright<br>
 &#x00AE; ==  ® registered<br>
-&#x27122; ==  ™ trade mark<br>
+&#x2122; ==  ™ trade mark<br>
 &#x1FADF; ==  🫟 splatter<br>
 
 ### subgroup: keycap
@@ -693,9 +693,9 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F191; ==  🆑 CL button<br>
 &#x1F192; ==  🆒 COOL button<br>
 &#x1F193; ==  🆓 FREE button<br>
-&#x27139; ==  ℹ information<br>
+&#x2139; ==  ℹ information<br>
 &#x1F194; ==  🆔 ID button<br>
-&#x274C2; ==  Ⓜ circled M<br>
+&#x24C2; ==  Ⓜ circled M<br>
 &#x1F195; ==  🆕 NEW button<br>
 &#x1F196; ==  🆖 NG button<br>
 &#x1F17E; ==  🅾 O button (blood type)<br>
@@ -730,8 +730,8 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F535; ==  🔵 blue circle<br>
 &#x1F7E3; ==  🟣 purple circle<br>
 &#x1F7E4; ==  🟤 brown circle<br>
-&#x276AB; ==  ⚫ black circle<br>
-&#x276AA; ==  ⚪ white circle<br>
+&#x26AB; ==  ⚫ black circle<br>
+&#x26AA; ==  ⚪ white circle<br>
 &#x1F7E5; ==  🟥 red square<br>
 &#x1F7E7; ==  🟧 orange square<br>
 &#x1F7E8; ==  🟨 yellow square<br>
@@ -739,14 +739,14 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F7E6; ==  🟦 blue square<br>
 &#x1F7EA; ==  🟪 purple square<br>
 &#x1F7EB; ==  🟫 brown square<br>
-&#x27B1B; ==  ⬛ black large square<br>
-&#x27B1C; ==  ⬜ white large square<br>
-&#x275FC; ==  ◼ black medium square<br>
-&#x275FB; ==  ◻ white medium square<br>
-&#x275FE; ==  ◾ black medium-small square<br>
-&#x275FD; ==  ◽ white medium-small square<br>
-&#x275AA; ==  ▪ black small square<br>
-&#x275AB; ==  ▫ white small square<br>
+&#x2B1B; ==  ⬛ black large square<br>
+&#x2B1C; ==  ⬜ white large square<br>
+&#x25FC; ==  ◼ black medium square<br>
+&#x25FB; ==  ◻ white medium square<br>
+&#x25FE; ==  ◾ black medium-small square<br>
+&#x25FD; ==  ◽ white medium-small square<br>
+&#x25AA; ==  ▪ black small square<br>
+&#x25AB; ==  ▫ white small square<br>
 &#x1F536; ==  🔶 large orange diamond<br>
 &#x1F537; ==  🔷 large blue diamond<br>
 &#x1F538; ==  🔸 small orange diamond<br>
@@ -761,11 +761,18 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 # group: Flags
 
 ### subgroup: flag
-&#x1F3C1; ==  🏁 chequered flag<br>
-&#x1F6A9; ==  🚩 triangular flag<br>
-&#x1F38C; ==  🎌 crossed flags<br>
-&#x1F3F4; ==  🏴 black flag<br>
-&#x1F3F3; ==  🏳 white flag<br>
-&#x1F3F4; ==  🏴‍☠ pirate flag<br>
+&#x1F3C1; ==  chequered flag<br>
+&#x1F6A9; ==  triangular flag<br>
+&#x1F38C; ==  crossed flags<br>
+&#x1F3F4; ==  black flag<br>
+&#x1F3F3; ==  white flag<br>
+&#x1F3F4; ==  pirate flag?<br>
 
 </div>
+
+&#x1F3C1; ==  chequered flag  
+&#x1F6A9; ==  triangular flag  
+&#x1F38C; ==  crossed flags  
+&#x1F3F4; ==  black flag  
+&#x1F3F3; ==  white flag  
+&#x1F3F4; ==  pirate flag?  
