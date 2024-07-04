@@ -3,6 +3,7 @@ and from https://www.unicode.org/Public/draft/emoji/emoji-test.txt
 and from https://unicode.org/emoji/charts/full-emoji-list.html  
 and from https://www.unicode.org/Public/draft/UCD/ucd/emoji/emoji-data.txt
 and from https://www.unicode.org/Public/draft/emoji/emoji-sequences.txt  
+and from https://www.alt-codes.net/arrow_alt_codes.php  
 and from https://www.unicode.org/Public/draft/UCD/ucd/emoji/emoji-variation-sequences.txt  
 and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schools.com/charsets/ref_html_entities_a.asp and https://gist.github.com/mayurchhapra/3508291362c42d983fe5774e71f70207    
 
@@ -667,9 +668,9 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1FADF; ==  🫟 splatter<br>
 
 ### subgroup: keycap
-&#x0023; ==  #️⃣ keycap: #<br>
-&#x002A; ==  *️⃣ keycap: *<br>
-&#x0030; ==  0️⃣ keycap: 0<br>
+&#x0023;&#x20E3; ==  #️⃣ keycap: #<br>
+&#x002A;&#x20E3; ==  *️⃣ keycap: *<br>
+&#x0030;&#x20E3; ==  0️⃣ keycap: 0<br>
 &#x0031; ==  1️⃣ keycap: 1<br>
 &#x0032; ==  2️⃣ keycap: 2<br>
 &#x0033; ==  3️⃣ keycap: 3<br>
