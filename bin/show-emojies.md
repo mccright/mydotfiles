@@ -9,12 +9,13 @@ U+1F3A8; == artist
 uni2728; == magic  
 U+1F3E1; == house  
 
-&1F600; == grinningface  
-&1F493; == love  
-&1F4BB; == computer  
-&1F3A8; == artist  
-&2728; == magic  
-&1F3E1; == house  
+<html>
+<p>&1F600; == grinningface<br>
+&1F493; == love<br>
+&1F4BB; == computer<br>
+&1F3A8; == artist<br>
+&2728; == magic<br>
+&1F3E1; == house</p>
 
 ---- test end ----  
 
