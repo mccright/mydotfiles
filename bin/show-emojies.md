@@ -1,11 +1,11 @@
 Testing some UTF codes from: https://github.com/thoppe/LigaturaObscura  
 and from https://www.unicode.org/Public/draft/emoji/emoji-test.txt  
 and from https://unicode.org/emoji/charts/full-emoji-list.html  
-and from https://www.unicode.org/Public/draft/UCD/ucd/emoji/emoji-data.txt
+and from https://www.unicode.org/Public/draft/UCD/ucd/emoji/emoji-data.txt  
 and from https://www.unicode.org/Public/draft/emoji/emoji-sequences.txt  
 and from https://www.alt-codes.net/arrow_alt_codes.php  
 and from https://www.unicode.org/Public/draft/UCD/ucd/emoji/emoji-variation-sequences.txt  
-and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schools.com/charsets/ref_html_entities_a.asp and https://gist.github.com/mayurchhapra/3508291362c42d983fe5774e71f70207    
+and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schools.com/charsets/ref_html_entities_a.asp, https://www.alt-codes.net/arrow_alt_codes.php, https://www.unicodepedia.com/unicode/combining-diacritical-marks-for-symbols/20e3/combining-enclosing-keycap/ and https://gist.github.com/mayurchhapra/3508291362c42d983fe5774e71f70207    
 
 <div>
 <p>&#x1F600; == grinningface<br>
@@ -320,99 +320,98 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F39E; == film frames<br>
 &#x1F4FD; == film projector<br>
 &#x1F3AC; == clapper board<br>
-&#x1F4FA; ==  📺 television<br>
-&#x1F4F7; ==  📷 camera<br>
-&#x1F4F8; ==  📸 camera with flash<br>
-&#x1F4F9; ==  📹 video camera<br>
-&#x1F4FC; ==  📼 videocassette<br>
-&#x1F50D; ==  🔍 magnifying glass tilted left<br>
-&#x1F50E; ==  🔎 magnifying glass tilted right<br>
-&#x1F56F; ==  🕯 candle<br>
-&#x1F4A1; ==  💡 light bulb<br>
-&#x1F526; ==  🔦 flashlight<br>
-&#x1F3EE; ==  🏮 red paper lantern<br>
-&#x1FA94; ==  🪔 diya lamp<br>
+&#x1F4FA; == television<br>
+&#x1F4F7; == camera<br>
+&#x1F4F8; == camera with flash<br>
+&#x1F4F9; == video camera<br>
+&#x1F4FC; == videocassette<br>
+&#x1F50D; == magnifying glass tilted left<br>
+&#x1F50E; == magnifying glass tilted right<br>
+&#x1F56F; == candle<br>
+&#x1F4A1; == light bulb<br>
+&#x1F526; == flashlight<br>
+&#x1F3EE; == red paper lantern<br>
+&#x1FA94; == diya lamp<br>
 
 ### subgroup: book-paper
-&#x1F4D4; ==  📔 notebook with decorative cover<br>
-&#x1F4D5; ==  📕 closed book<br>
-&#x1F4D6; ==  📖 open book<br>
-&#x1F4D7; ==  📗 green book<br>
-&#x1F4D8; ==  📘 blue book<br>
-&#x1F4D9; ==  📙 orange book<br>
-&#x1F4DA; ==  📚 books<br>
-&#x1F4D3; ==  📓 notebook<br>
-&#x1F4D2; ==  📒 ledger<br>
-&#x1F4C3; ==  📃 page with curl<br>
-&#x1F4DC; ==  📜 scroll<br>
-&#x1F4C4; ==  📄 page facing up<br>
-&#x1F4F0; ==  📰 newspaper<br>
-&#x1F5DE; ==  🗞 rolled-up newspaper<br>
-&#x1F4D1; ==  📑 bookmark tabs<br>
-&#x1F516; ==  🔖 bookmark<br>
-&#x1F3F7; ==  🏷 label<br>
+&#x1F4D4; == notebook with decorative cover<br>
+&#x1F4D5; == closed book<br>
+&#x1F4D6; == open book<br>
+&#x1F4D7; == green book<br>
+&#x1F4D8; == blue book<br>
+&#x1F4D9; == orange book<br>
+&#x1F4DA; == books<br>
+&#x1F4D3; == notebook<br>
+&#x1F4D2; == ledger<br>
+&#x1F4C3; == page with curl<br>
+&#x1F4DC; == scroll<br>
+&#x1F4C4; == page facing up<br>
+&#x1F4F0; == newspaper<br>
+&#x1F5DE; == rolled-up newspaper<br>
+&#x1F4D1; == bookmark tabs<br>
+&#x1F516; == bookmark<br>
+&#x1F3F7; == label<br>
 
 ### subgroup: money
-&#x1F4B0; ==  💰 money bag<br>
-&#x1FA99; ==  🪙 coin<br>
-&#x1F4B4; ==  💴 yen banknote<br>
-&#x1F4B5; ==  💵 dollar banknote<br>
-&#x1F4B6; ==  💶 euro banknote<br>
-&#x1F4B7; ==  💷 pound banknote<br>
-&#x1F4B8; ==  💸 money with wings<br>
-&#x1F4B3; ==  💳 credit card<br>
-&#x1F9FE; ==  🧾 receipt<br>
-&#x1F4B9; ==  💹 chart increasing with yen<br>
+&#x1F4B0; == money bag<br>
+&#x1FA99; == coin<br>
+&#x1F4B4; == yen banknote<br>
+&#x1F4B5; == dollar banknote<br>
+&#x1F4B6; == euro banknote<br>
+&#x1F4B7; == pound banknote<br>
+&#x1F4B8; == money with wings<br>
+&#x1F4B3; == credit card<br>
+&#x1F9FE; == receipt<br>
 
 ### subgroup: mail
-&#x2709; ==  ✉ envelope<br>
-&#x1F4E7; ==  📧 e-mail<br>
-&#x1F4E8; ==  📨 incoming envelope<br>
-&#x1F4E9; ==  📩 envelope with arrow<br>
-&#x1F4E4; ==  📤 outbox tray<br>
-&#x1F4E5; ==  📥 inbox tray<br>
-&#x1F4E6; ==  📦 package<br>
-&#x1F4EB; ==  📫 closed mailbox with raised flag<br>
-&#x1F4EA; ==  📪 closed mailbox with lowered flag<br>
-&#x1F4EC; ==  📬 open mailbox with raised flag<br>
-&#x1F4ED; ==  📭 open mailbox with lowered flag<br>
-&#x1F4EE; ==  📮 postbox<br>
-&#x1F5F3; ==  🗳 ballot box with ballot<br>
+&#x2709; == envelope<br>
+&#x1F4E7; == e-mail<br>
+&#x1F4E8; == incoming envelope<br>
+&#x1F4E9; == envelope with arrow<br>
+&#x1F4E4; == outbox tray<br>
+&#x1F4E5; == inbox tray<br>
+&#x1F4E6; == package<br>
+&#x1F4EB; == closed mailbox with raised flag<br>
+&#x1F4EA; == closed mailbox with lowered flag<br>
+&#x1F4EC; == open mailbox with raised flag<br>
+&#x1F4ED; == open mailbox with lowered flag<br>
+&#x1F4EE; == postbox<br>
+&#x1F5F3; == ballot box with ballot<br>
 
 ### subgroup: writing
-&#x270F; ==  ✏ pencil<br>
-&#x2712; ==  ✒ black nib<br>
-&#x1F58B; ==  🖋 fountain pen<br>
-&#x1F58A; ==  🖊 pen<br>
-&#x1F58C; ==  🖌 paintbrush<br>
-&#x1F58D; ==  🖍 crayon<br>
-&#x1F4DD; ==  📝 memo<br>
+&#x270F; == pencil<br>
+&#x2712; == black nib<br>
+&#x1F58B; == fountain pen<br>
+&#x1F58A; == pen<br>
+&#x1F58C; == paintbrush<br>
+&#x1F58D; == crayon<br>
+&#x1F4DD; == memo<br>
 
 ### subgroup: office
-&#x1F4BC; ==  💼 briefcase<br>
-&#x1F4C1; ==  📁 file folder<br>
-&#x1F4C2; ==  📂 open file folder<br>
-&#x1F5C2; ==  🗂 card index dividers<br>
-&#x1F4C5; ==  📅 calendar<br>
-&#x1F4C6; ==  📆 tear-off calendar<br>
-&#x1F5D2; ==  🗒 spiral notepad<br>
-&#x1F5D3; ==  🗓 spiral calendar<br>
-&#x1F4C7; ==  📇 card index<br>
-&#x1F4C8; ==  📈 chart increasing<br>
-&#x1F4C9; ==  📉 chart decreasing<br>
-&#x1F4CA; ==  📊 bar chart<br>
-&#x1F4CB; ==  📋 clipboard<br>
-&#x1F4CC; ==  📌 pushpin<br>
-&#x1F4CD; ==  📍 round pushpin<br>
-&#x1F4CE; ==  📎 paperclip<br>
-&#x1F587; ==  🖇 linked paperclips<br>
-&#x1F4CF; ==  📏 straight ruler<br>
-&#x1F4D0; ==  📐 triangular ruler<br><br>
+&#x1F4BC; == briefcase<br>
+&#x1F4C1; == file folder<br>
+&#x1F4C2; == open file folder<br>
+&#x1F5C2; == card index dividers<br>
+&#x1F4C5; == calendar<br>
+&#x1F4C6; == tear-off calendar<br>
+&#x1F5D2; == spiral notepad<br>
+&#x1F5D3; == spiral calendar<br>
+&#x1F4C7; == card index<br>
+&#x1F4C8; == chart increasing<br>
+&#x1F4C9; == chart decreasing<br>
+&#x1F4CA; == bar chart<br>
+&#x1F4CB; == clipboard<br>
+&#x1F4CC; == pushpin<br>
+&#x1F4CD; == round pushpin<br>
+&#x1F4CE; == paperclip<br>
+&#x1F587; == linked paperclips<br>
+&#x1F4CF; == straight ruler<br>
+&#x1F4D0; == triangular ruler<br><br>
 &#x2702;&#xFE0F; == scissors<br>
-&#x2702; ==  ✂ scissors<br>
-&#x1F5C3; ==  🗃 card file box<br>
-&#x1F5C4; ==  🗄 file cabinet<br>
-&#x1F5D1; ==  🗑 wastebasket<br>
+&#x2702; == scissors<br>
+&#x1F5C3; == card file box<br>
+&#x1F5C4; == file cabinet<br>
+&#x1F5D1; == wastebasket<br>
 
 ### subgroup: lock
 &#x1F512; ==  🔒 locked<br>
@@ -423,88 +422,88 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F5DD; ==  🗝 old key<br>
 
 # subgroup: tool
-&#x1F528; ==  🔨 hammer<br>
-&#x1FA93; ==  🪓 axe<br><br>
-&#x26CF; ==  ⛏ pick<br><br>
-&#x2692; ==  ⚒ hammer and pick<br>
-&#x1F6E0; ==  🛠 hammer and wrench<br>
-&#x1F5E1; == 🗡 dagger<br>
-&#x2694; == ⚔ crossed swords<br>
-&#x1F4A3; ==  💣 bomb<br>
-&#x1FA83; ==  🪃 boomerang<br>
-&#x1F3F9; ==  🏹 bow and arrow<br>
-&#x1F6E1; ==  🛡 shield<br>
-&#x1FA9A; ==  🪚 carpentry saw<br>
-&#x1F527; ==  🔧 wrench<br>
-&#x1FA9B; ==  🪛 screwdriver<br>
-&#x1F529; ==  🔩 nut and bolt<br>
-&#x2699; ==  ⚙ gear<br>
-&#x1F5DC; ==  🗜 clamp<br>
-&#x2696; ==  ⚖ balance scale<br>
-&#x1F9AF; ==  🦯 white cane<br>
-&#x1F517; ==  🔗 link<br>
-&#x26D3; ==  ⛓ chains<br>
-&#x1FA9D; ==  🪝 hook<br>
-&#x1F9F0; ==  🧰 toolbox<br>
-&#x1F9F2; ==  🧲 magnet<br>
-&#x1FA9C; == 🪜 ladder<br>
+&#x1F528; == hammer<br>
+&#x1FA93; == axe<br><br>
+&#x26CF; == pick<br><br>
+&#x2692; == hammer and pick<br>
+&#x1F6E0; == hammer and wrench<br>
+&#x1F5E1; == dagger<br>
+&#x2694; == crossed swords<br>
+&#x1F4A3; == bomb<br>
+&#x1FA83; == boomerang<br>
+&#x1F3F9; == bow and arrow<br>
+&#x1F6E1; == shield<br>
+&#x1FA9A; == carpentry saw<br>
+&#x1F527; == wrench<br>
+&#x1FA9B; == screwdriver<br>
+&#x1F529; == nut and bolt<br>
+&#x2699; == gear<br>
+&#x1F5DC; == clamp<br>
+&#x2696; == balance scale<br>
+&#x1F9AF; == white cane<br>
+&#x1F517; == link<br>
+&#x26D3; == chains<br>
+&#x1FA9D; == hook<br>
+&#x1F9F0; == toolbox<br>
+&#x1F9F2; == magnet<br>
+&#x1FA9C; == ladder<br>
 &#x1FA8F; == shovel<br>
 
 ### subgroup: science
-&#x2697;&#xFE0F; ==  ⚗ alembic<br>
-&#x1F9EA; ==  🧪 test tube<br>
-&#x1F9EB; ==  🧫 petri dish<br>
-&#x1F9EC; ==  🧬 dna<br>
-&#x1F52C; ==  🔬 microscope<br>
-&#x1F52D; ==  🔭 telescope<br>
-&#x1F4E1; ==  📡 satellite antenna<br>
+&#x2697;&#xFE0F; == alembic<br>
+&#x1F9EA; == test tube<br>
+&#x1F9EB; == petri dish<br>
+&#x1F9EC; == dna<br>
+&#x1F52C; == microscope<br>
+&#x1F52D; == telescope<br>
+&#x1F4E1; == satellite antenna<br>
 
 ### subgroup: medical
-&#x1F489; ==  💉 syringe<br>
-&#x1FA78; ==  🩸 drop of blood<br>
-&#x1F48A; ==  💊 pill<br>
-&#x1FA79; ==  🩹 adhesive bandage<br>
-&#x1FA7C; ==  🩼 crutch<br>
-&#x1FA7A; ==  🩺 stethoscope<br>
-&#x1FA7B; ==  🩻 x-ray<br>
+&#x1F489; == syringe<br>
+&#x1FA78; == drop of blood<br>
+&#x1F48A; == pill<br>
+&#x1FA79; == adhesive bandage<br>
+&#x1FA7C; == crutch<br>
+&#x1FA7A; == stethoscope<br>
+&#x1FA7B; == x-ray<br>
 
 ### subgroup: household
-&#x1F6AA; ==  🚪 door<br>
-&#x1F6D7; ==  🛗 elevator<br>
-&#x1FA9E; ==  🪞 mirror<br>
-&#x1FA9F; ==  🪟 window<br>
-&#x1F6CF; ==  🛏 bed<br>
-&#x1F6CB; ==  🛋 couch and lamp<br>
-&#x1FA91; ==  🪑 chair<br>
-&#x1F6BD; ==  🚽 toilet<br>
-&#x1FAA0; ==  🪠 plunger<br>
-&#x1F6BF; ==  🚿 shower<br>
-&#x1F6C1; ==  🛁 bathtub<br>
-&#x1FAA4; ==  🪤 mouse trap<br>
-&#x1FA92; ==  🪒 razor<br>
-&#x1F9F4; ==  🧴 lotion bottle<br>
-&#x1F9F7; ==  🧷 safety pin<br>
-&#x1F9F9; ==  🧹 broom<br>
-&#x1F9FA; ==  🧺 basket<br>
-&#x1F9FB; ==  🧻 roll of paper<br>
-&#x1FAA3; ==  🪣 bucket<br>
-&#x1F9FC; ==  🧼 soap<br>
-&#x1FAE7; ==  🫧 bubbles<br>
-&#x1FAA5; ==  🪥 toothbrush<br>
-&#x1F9FD; ==  🧽 sponge<br>
-&#x1F9EF; ==  🧯 fire extinguisher<br>
-&#x1F6D2; ==  🛒 shopping cart<br>
+&#x1F6AA; == door<br>
+&#x1F6D7; == elevator<br>
+&#x1FA9E; == mirror<br>
+&#x1FA9F; == window<br>
+&#x1F6CF; == bed<br>
+&#x1F6CB; == couch and lamp<br>
+&#x1FA91; == chair<br>
+&#x1F6BD; == toilet<br>
+&#x1FAA0; == plunger<br>
+&#x1F6BF; == shower<br>
+&#x1F6C1; == bathtub<br>
+&#x1FAA4; == mouse trap<br>
+&#x1FA92; == razor<br>
+&#x1F9F4; == lotion bottle<br>
+&#x1F9F7; == safety pin<br>
+&#x1F9F9; == broom<br>
+&#x1F9FA; == basket<br>
+&#x1F9FB; == roll of paper<br>
+&#x1FAA3; == bucket<br>
+&#x1F9FC; == soap<br>
+&#x1FAE7; == bubbles<br>
+&#x1FAA5; == toothbrush<br>
+&#x1F9FD; == sponge<br>
+&#x1F9EF; == fire extinguisher<br>
+&#x1F6D2; == shopping cart<br>
 
 # subgroup: other-object
-&#x1F6AC; ==  🚬 cigarette<br>
-&#x26B0; ==  ⚰ coffin<br>
-&#x1FAA6; ==  🪦 headstone<br>
-&#x26B1; ==  ⚱ funeral urn<br>
-&#x1F9FF; ==  🧿 nazar amulet<br>
-&#x1FAAC; ==  🪬 hamsa<br>
-&#x1F5FF; ==  🗿 moai<br>
-&#x1FAA7; ==  🪧 placard<br>
-&#x1FAAA; ==  🪪 identification card<br>
+&#x1F6AC; == cigarette<br>
+&#x26B0; == coffin<br>
+&#x1FAA6; == headstone<br>
+&#x26B1; == funeral urn<br>
+&#x1F9FF; == nazar amulet<br>
+&#x1FAAC; == hamsa<br>
+&#x1F5FF; == moai<br>
+&#x1FAA7; == placard<br>
+&#x1FAAA; == identification card<br>
 
 # group: Symbols
 
@@ -562,61 +561,61 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F51D; ==  🔝 TOP arrow<br>
 
 ### subgroup: religion
-&#x1F6D0; ==  🛐 place of worship<br>
-&#x269B; ==  ⚛ atom symbol<br>
-&#x1F549; ==  🕉 om<br>
-&#x2721; ==  ✡ star of David<br>
-&#x2638; ==  ☸ wheel of dharma<br>
-&#x262F; ==  ☯ yin yang<br>
-&#x271D; ==  ✝ latin cross<br>
-&#x2626; ==  ☦ orthodox cross<br>
-&#x262A; ==  ☪ star and crescent<br>
-&#x262E; ==  ☮ peace symbol<br>
-&#x1F54E; ==  🕎 menorah<br>
-&#x1F52F; ==  🔯 dotted six-pointed star<br>
-&#x1FAAF; ==  🪯 khanda<br>
+&#x1F6D0; == place of worship<br>
+&#x269B; == atom symbol<br>
+&#x1F549; == om<br>
+&#x2721; == star of David<br>
+&#x2638; == wheel of dharma<br>
+&#x262F; == yin yang<br>
+&#x271D; == latin cross<br>
+&#x2626; == orthodox cross<br>
+&#x262A; == star and crescent<br>
+&#x262E; == peace symbol<br>
+&#x1F54E; == menorah<br>
+&#x1F52F; == dotted six-pointed star<br>
+&#x1FAAF; == khanda<br>
 
 ### subgroup: zodiac
-&#x2648; ==  ♈ Aries<br>
-&#x2649; ==  ♉ Taurus<br>
-&#x264A; ==  ♊ Gemini<br>
-&#x264B; ==  ♋ Cancer<br>
-&#x264C; ==  ♌ Leo<br>
-&#x264D; ==  ♍ Virgo<br>
-&#x264E; ==  ♎ Libra<br>
-&#x264F; ==  ♏ Scorpio<br>
-&#x2650; ==  ♐ Sagittarius<br>
-&#x2651; ==  ♑ Capricorn<br>
-&#x2652; ==  ♒ Aquarius<br>
-&#x2653; ==  ♓ Pisces<br>
-&#x26CE; ==  ⛎ Ophiuchus<br>
+&#x2648; == Aries<br>
+&#x2649; == Taurus<br>
+&#x264A; == Gemini<br>
+&#x264B; == Cancer<br>
+&#x264C; == Leo<br>
+&#x264D; == Virgo<br>
+&#x264E; == Libra<br>
+&#x264F; == Scorpio<br>
+&#x2650; == Sagittarius<br>
+&#x2651; == Capricorn<br>
+&#x2652; == Aquarius<br>
+&#x2653; == Pisces<br>
+&#x26CE; == Ophiuchus<br>
 
 ### subgroup: av-symbol
-&#x1F500; ==  🔀 shuffle tracks button<br>
-&#x1F501; ==  🔁 repeat button<br>
-&#x1F502; ==  🔂 repeat single button<br>
-&#x25B6; ==  ▶ play button<br>
-&#x23E9; ==  ⏩ fast-forward button<br>
-&#x23ED; ==  ⏭ next track button<br>
-&#x23EF; ==  ⏯ play or pause button<br>
-&#x25C0; ==  ◀ reverse button<br>
-&#x23EA; ==  ⏪ fast reverse button<br>
-&#x23EE; ==  ⏮ last track button<br>
-&#x1F53C; ==  🔼 upwards button<br>
-&#x23EB; ==  ⏫ fast up button<br>
-&#x1F53D; ==  🔽 downwards button<br>
-&#x23EC; ==  ⏬ fast down button<br>
-&#x23F8; ==  ⏸ pause button<br>
-&#x23F9; ==  ⏹ stop button<br>
-&#x23FA; ==  ⏺ record button<br>
-&#x23CF; ==  ⏏ eject button<br>
-&#x1F3A6; ==  🎦 cinema<br>
-&#x1F505; ==  🔅 dim button<br>
-&#x1F506; ==  🔆 bright button<br>
-&#x1F4F6; ==  📶 antenna bars<br>
-&#x1F6DC; ==  🛜 wireless<br>
-&#x1F4F3; ==  📳 vibration mode<br>
-&#x1F4F4; ==  📴 mobile phone off<br>
+&#x1F500; == shuffle tracks button<br>
+&#x1F501; == repeat button<br>
+&#x1F502; == repeat single button<br>
+&#x25B6; == play button<br>
+&#x23E9; == fast-forward button<br>
+&#x23ED; == next track button<br>
+&#x23EF; == play or pause button<br>
+&#x25C0; == reverse button<br>
+&#x23EA; == fast reverse button<br>
+&#x23EE; == last track button<br>
+&#x1F53C; == upwards button<br>
+&#x23EB; == fast up button<br>
+&#x1F53D; == downwards button<br>
+&#x23EC; == fast down button<br>
+&#x23F8; == pause button<br>
+&#x23F9; == stop button<br>
+&#x23FA; == record button<br>
+&#x23CF; == eject button<br>
+&#x1F3A6; == cinema<br>
+&#x1F505; == dim button<br>
+&#x1F506; == bright button<br>
+&#x1F4F6; == antenna bars<br>
+&#x1F6DC; == wireless<br>
+&#x1F4F3; == vibration mode<br>
+&#x1F4F4; == mobile phone off<br>
 
 ### subgroup: gender<br>
 &#x2640; ==  ♀ female sign<br>
@@ -632,17 +631,17 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x267E; ==  ♾ infinity<br>
 
 ### subgroup: punctuation
-&#x203C; ==  ‼ double exclamation mark<br>
-&#x2049; ==  ⁉ exclamation question mark<br>
-&#x2753; ==  ❓ red question mark<br>
-&#x2754; ==  ❔ white question mark<br>
-&#x2755; ==  ❕ white exclamation mark<br>
-&#x2757; ==  ❗ red exclamation mark<br>
-&#x3030; ==  〰 wavy dash<br>
+&#x203C; == double exclamation mark<br>
+&#x2049; == exclamation question mark<br>
+&#x2753; == red question mark<br>
+&#x2754; == white question mark<br>
+&#x2755; == white exclamation mark<br>
+&#x2757; == red exclamation mark<br>
+&#x3030; == wavy dash<br>
 
 ### subgroup: currency
-&#x1F4B1; ==  💱 currency exchange<br>
-&#x1F4B2; ==  💲 heavy dollar sign<br>
+&#x1F4B1; == currency exchange<br>
+&#x1F4B2; == heavy dollar sign<br>
 
 ### subgroup: other-symbol
 &#x2695; ==  ⚕ medical symbol<br>
@@ -706,69 +705,46 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F198; ==  🆘 SOS button<br>
 &#x1F199; ==  🆙 UP! button<br>
 &#x1F19A; ==  🆚 VS button<br>
-&#x1F201; ==  🈁 Japanese “here” button<br>
-&#x1F202; ==  🈂 Japanese “service charge” button<br>
-&#x1F237; ==  🈷 Japanese “monthly amount” button<br>
-&#x1F236; ==  🈶 Japanese “not free of charge” button<br>
-&#x1F22F; ==  🈯 Japanese “reserved” button<br>
-&#x1F250; ==  🉐 Japanese “bargain” button<br>
-&#x1F239; ==  🈹 Japanese “discount” button<br>
-&#x1F21A; ==  🈚 Japanese “free of charge” button<br>
-&#x1F232; ==  🈲 Japanese “prohibited” button<br>
-&#x1F251; ==  🉑 Japanese “acceptable” button<br>
-&#x1F238; ==  🈸 Japanese “application” button<br>
-&#x1F234; ==  🈴 Japanese “passing grade” button<br>
-&#x1F233; ==  🈳 Japanese “vacancy” button<br>
-&#x3297; ==  ㊗ Japanese “congratulations” button<br>
-&#x3299; ==  ㊙ Japanese “secret” button<br>
-&#x1F23A; ==  🈺 Japanese “open for business” button<br>
-&#x1F235; ==  🈵 Japanese “no vacancy” button<br>
 
 ### subgroup: geometric
-&#x1F534; ==  🔴 red circle<br>
-&#x1F7E0; ==  🟠 orange circle<br>
-&#x1F7E1; ==  🟡 yellow circle<br>
-&#x1F7E2; ==  🟢 green circle<br>
-&#x1F535; ==  🔵 blue circle<br>
-&#x1F7E3; ==  🟣 purple circle<br>
-&#x1F7E4; ==  🟤 brown circle<br>
-&#x26AB; ==  ⚫ black circle<br>
-&#x26AA; ==  ⚪ white circle<br>
-&#x1F7E5; ==  🟥 red square<br>
-&#x1F7E7; ==  🟧 orange square<br>
-&#x1F7E8; ==  🟨 yellow square<br>
-&#x1F7E9; ==  🟩 green square<br>
-&#x1F7E6; ==  🟦 blue square<br>
-&#x1F7EA; ==  🟪 purple square<br>
-&#x1F7EB; ==  🟫 brown square<br>
-&#x2B1B; ==  ⬛ black large square<br>
-&#x2B1C; ==  ⬜ white large square<br>
-&#x25FC; ==  ◼ black medium square<br>
-&#x25FB; ==  ◻ white medium square<br>
-&#x25FE; ==  ◾ black medium-small square<br>
-&#x25FD; ==  ◽ white medium-small square<br>
-&#x25AA; ==  ▪ black small square<br>
-&#x25AB; ==  ▫ white small square<br>
-&#x1F536; ==  🔶 large orange diamond<br>
-&#x1F537; ==  🔷 large blue diamond<br>
-&#x1F538; ==  🔸 small orange diamond<br>
-&#x1F539; ==  🔹 small blue diamond<br>
-&#x1F53A; ==  🔺 red triangle pointed up<br>
-&#x1F53B; ==  🔻 red triangle pointed down<br>
-&#x1F4A0; ==  💠 diamond with a dot<br>
-&#x1F518; ==  🔘 radio button<br>
-&#x1F533; ==  🔳 white square button<br>
-&#x1F532; ==  🔲 black square button<br>
+&#x1F534; == red circle<br>
+&#x1F7E0; == orange circle<br>
+&#x1F7E1; == yellow circle<br>
+&#x1F7E2; == green circle<br>
+&#x1F535; == blue circle<br>
+&#x1F7E3; == purple circle<br>
+&#x1F7E4; == brown circle<br>
+&#x26AB; == black circle<br>
+&#x26AA; == white circle<br>
+&#x1F7E5; == red square<br>
+&#x1F7E7; == orange square<br>
+&#x1F7E8; == yellow square<br>
+&#x1F7E9; == green square<br>
+&#x1F7E6; == blue square<br>
+&#x1F7EA; == purple square<br>
+&#x1F7EB; == brown square<br>
+&#x2B1B; == black large square<br>
+&#x2B1C; == white large square<br>
+&#x25FC; == black medium square<br>
+&#x25FB; == white medium square<br>
+&#x25FE; == black medium-small square<br>
+&#x25FD; == white medium-small square<br>
+&#x25AA; == black small square<br>
+&#x25AB; == white small square<br>
+&#x1F536; == large orange diamond<br>
+&#x1F537; == large blue diamond<br>
+&#x1F538; == small orange diamond<br>
+&#x1F539; == small blue diamond<br>
+&#x1F53A; == red triangle pointed up<br>
+&#x1F53B; == red triangle pointed down<br>
+&#x1F4A0; == diamond with a dot<br>
+&#x1F518; == radio button<br>
+&#x1F533; == white square button<br>
+&#x1F532; == black square button<br>
 
 # group: Flags
 
 ### subgroup: flag
-&#x1F3C1; ==  chequered flag<br>
-&#x1F6A9; ==  triangular flag<br>
-&#x1F38C; ==  crossed flags<br>
-&#x1F3F4; ==  black flag<br>
-&#x1F3F3;&#xFE0F; ==  white flag<br>
-&#x1F3F4;&#x200D;&#x2620;&#xFE0F; ==  pirate flag<br>
 
 </div>
 
