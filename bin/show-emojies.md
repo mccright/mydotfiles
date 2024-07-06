@@ -10,12 +10,14 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 <div>
 <p>&#x1F600; == grinningface<br>
 &#x1F4A9; == poop<br>
+&#x00A9;&#xFE0F; == copyright<br>
+&#x00AE;&#xFE0F; == registered<br>
+&#x2122;&#xFE0F; == trade mark<br>
 &#x1F577; == spider<br>
 &#x1F4AA; == flex<br>
 &#x1F525; == fire<br>
 &#x1F527; == wrench<br>
 &#x1F528; == hammer<br>
-&#x1F493; == love<br>
 &#x1F4BB; == computer<br>
 &#x1F3A8; == artist<br>
 &#x2728; == magic<br>
@@ -118,10 +120,7 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F3CA; == swimmer<br>
 &#x1F3CC; == golfer<br>
 &#x1F3D0; == volleyball<br>
-
 &#x1F37A; == beer<br>
-
-    
 &#x1F3D5; == camping<br>
 &#x1F3D9; == city<br>
 &#x1F3DF; == stadium<br>
@@ -265,6 +264,41 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F9F3; == luggage<br>
 &#x1F9F4; == lotion</p>
 
+### subgroup: geometric  
+&#x1F534; == red circle<br>
+&#x1F7E0; == orange circle<br>
+&#x1F7E1; == yellow circle<br>
+&#x1F7E2; == green circle<br>
+&#x1F535; == blue circle<br>
+&#x1F7E3; == purple circle<br>
+&#x1F7E4; == brown circle<br>
+&#x26AB; == black circle<br>
+&#x26AA; == white circle<br>
+&#x1F7E5; == red square<br>
+&#x1F7E7; == orange square<br>
+&#x1F7E8; == yellow square<br>
+&#x1F7E9; == green square<br>
+&#x1F7E6; == blue square<br>
+&#x1F7EA; == purple square<br>
+&#x1F7EB; == brown square<br>
+&#x2B1B; == black large square<br>
+&#x2B1C; == white large square<br>
+&#x25FC; == black medium square<br>
+&#x25FB; == white medium square<br>
+&#x25FE; == black medium-small square<br>
+&#x25FD; == white medium-small square<br>
+&#x25AA; == black small square<br>
+&#x25AB; == white small square<br>
+&#x1F536; == large orange diamond<br>
+&#x1F537; == large blue diamond<br>
+&#x1F538; == small orange diamond<br>
+&#x1F539; == small blue diamond<br>
+&#x1F53A; == red triangle pointed up<br>
+&#x1F53B; == red triangle pointed down<br>
+&#x1F4A0; == diamond with a dot<br>
+&#x1F518; == radio button<br>
+&#x1F533; == white square button<br>
+&#x1F532; == black square button<br>
 
 ### subgroup: music
 &#x1F3BC; == musical score<br>
@@ -508,34 +542,34 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 # group: Symbols
 
 ### subgroup: transport-sign
-&#x1F3E7; ==  🏧 ATM sign<br>
-&#x1F6AE; ==  🚮 litter in bin sign<br>
-&#x1F6B0; ==  🚰 potable water<br>
-&#x267F; ==  ♿ wheelchair symbol<br>
-&#x1F6B9; ==  🚹 men’s room<br>
-&#x1F6BA; ==  🚺 women’s room<br>
-&#x1F6BB; ==  🚻 restroom<br>
-&#x1F6BC; ==  🚼 baby symbol<br>
-&#x1F6BE; ==  🚾 water closet<br>
-&#x1F6C2; ==  🛂 passport control<br>
-&#x1F6C3; ==  🛃 customs<br>
-&#x1F6C4; ==  🛄 baggage claim<br>
-&#x1F6C5; ==  🛅 left luggage<br>
+&#x1F3E7; == ATM sign<br>
+&#x1F6AE; == litter in bin sign<br>
+&#x1F6B0; == potable water<br>
+&#x267F; == wheelchair symbol<br>
+&#x1F6B9; == men’s room<br>
+&#x1F6BA; == women’s room<br>
+&#x1F6BB; == restroom<br>
+&#x1F6BC; == baby symbol<br>
+&#x1F6BE; == water closet<br>
+&#x1F6C2; == passport control<br>
+&#x1F6C3; == customs<br>
+&#x1F6C4; == baggage claim<br>
+&#x1F6C5; == left luggage<br>
 
 ### subgroup: warning
-&#x26A0; ==  ⚠ warning<br>
-&#x1F6B8; ==  🚸 children crossing<br>
-&#x26D4; ==  ⛔ no entry<br>
-&#x1F6AB; ==  🚫 prohibited<br>
-&#x1F6B3; ==  🚳 no bicycles<br>
-&#x1F6AD; ==  🚭 no smoking<br>
-&#x1F6AF; ==  🚯 no littering<br>
-&#x1F6B1; ==  🚱 non-potable water<br>
-&#x1F6B7; ==  🚷 no pedestrians<br>
-&#x1F4F5; ==  📵 no mobile phones<br>
-&#x1F51E; ==  🔞 no one under eighteen<br>
-&#x2622; ==  ☢ radioactive<br>
-&#x2623; ==  ☣ biohazard<br>
+&#x26A0; == warning<br>
+&#x1F6B8; == children crossing<br>
+&#x26D4; == no entry<br>
+&#x1F6AB; == prohibited<br>
+&#x1F6B3; == no bicycles<br>
+&#x1F6AD; == no smoking<br>
+&#x1F6AF; == no littering<br>
+&#x1F6B1; == non-potable water<br>
+&#x1F6B7; == no pedestrians<br>
+&#x1F4F5; == no mobile phones<br>
+&#x1F51E; == no one under eighteen<br>
+&#x2622; == radioactive<br>
+&#x2623; == biohazard<br>
 
 ### subgroup: arrow
 &#x2B06; ==  ⬆️ up arrow<br>
@@ -618,9 +652,9 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F4F4; == mobile phone off<br>
 
 ### subgroup: gender<br>
-&#x2640; ==  ♀ female sign<br>
-&#x2642; ==  ♂ male sign<br>
-&#x26A7; ==  ⚧ transgender symbol<br>
+&#x2640; == female sign<br>
+&#x2642; == male sign<br>
+&#x26A7; == transgender symbol<br>
 
 ### subgroup: math<br>
 &#x2716; ==  ✖ multiply<br>
@@ -644,28 +678,24 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F4B2; == heavy dollar sign<br>
 
 ### subgroup: other-symbol
-&#x2695; ==  ⚕ medical symbol<br>
-&#x267B; ==  ♻ recycling symbol<br>
-&#x269C; ==  ⚜ fleur-de-lis<br>
-&#x1F531; ==  🔱 trident emblem<br>
-&#x1F4DB; ==  📛 name badge<br>
-&#x1F530; ==  🔰 Japanese symbol for beginner<br>
-&#x2B55; ==  ⭕ hollow red circle<br>
-&#x2705; ==  ✅ check mark button<br>
-&#x2611; ==  ☑ check box with check<br>
-&#x2714; ==  ✔ check mark<br>
-&#x274C; ==  ❌ cross mark<br>
-&#x274E; ==  ❎ cross mark button<br>
-&#x27B0; ==  ➰ curly loop<br>
-&#x27BF; ==  ➿ double curly loop<br>
-&#x303D; ==  〽 part alternation mark<br>
-&#x2733; ==  ✳ eight-spoked asterisk<br>
-&#x2734; ==  ✴ eight-pointed star<br>
-&#x2747; ==  ❇ sparkle<br>
-&#x00A9;&#xFE0F; ==  © copyright<br>
-&#x00AE;&#xFE0F; ==  ® registered<br>
-&#x2122;&#xFE0F; ==  ™ trade mark<br>
-&#x1FADF; ==  🫟 splatter<br>
+&#x2695; == medical symbol<br>
+&#x267B; == recycling symbol<br>
+&#x269C; == fleur-de-lis<br>
+&#x1F531; == trident emblem<br>
+&#x1F4DB; == name badge<br>
+&#x2B55; == hollow red circle<br>
+&#x2705; == check mark button<br>
+&#x2611; == check box with check<br>
+&#x2714; == check mark<br>
+&#x274C; == cross mark<br>
+&#x274E; == cross mark button<br>
+&#x27B0; == curly loop<br>
+&#x27BF; == double curly loop<br>
+&#x303D; == part alternation mark<br>
+&#x2733; == eight-spoked asterisk<br>
+&#x2734; == eight-pointed star<br>
+&#x2747; == sparkle<br>
+&#x1FADF; == splatter<br>
 
 ### subgroup: keycap
 &#x0023;&#xFE0F;&#x20E3; == keycap: #<br>
@@ -683,64 +713,28 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F51F; == keycap: 10<br>
 
 ### subgroup: alphanum
-&#x1F520; ==  🔠 input latin uppercase<br>
-&#x1F521; ==  🔡 input latin lowercase<br>
-&#x1F522; ==  🔢 input numbers<br>
-&#x1F523; ==  🔣 input symbols<br>
-&#x1F524; ==  🔤 input latin letters<br>
-&#x1F170; ==  🅰 A button (blood type)<br>
-&#x1F18E; ==  🆎 AB button (blood type)<br>
-&#x1F171; ==  🅱 B button (blood type)<br>
-&#x1F191; ==  🆑 CL button<br>
-&#x1F192; ==  🆒 COOL button<br>
-&#x1F193; ==  🆓 FREE button<br>
-&#x2139; ==  ℹ information<br>
-&#x1F194; ==  🆔 ID button<br>
-&#x24C2; ==  Ⓜ circled M<br>
-&#x1F195; ==  🆕 NEW button<br>
-&#x1F196; ==  🆖 NG button<br>
-&#x1F17E; ==  🅾 O button (blood type)<br>
-&#x1F197; ==  🆗 OK button<br>
-&#x1F17F; ==  🅿 P button<br>
-&#x1F198; ==  🆘 SOS button<br>
-&#x1F199; ==  🆙 UP! button<br>
-&#x1F19A; ==  🆚 VS button<br>
-
-### subgroup: geometric
-&#x1F534; == red circle<br>
-&#x1F7E0; == orange circle<br>
-&#x1F7E1; == yellow circle<br>
-&#x1F7E2; == green circle<br>
-&#x1F535; == blue circle<br>
-&#x1F7E3; == purple circle<br>
-&#x1F7E4; == brown circle<br>
-&#x26AB; == black circle<br>
-&#x26AA; == white circle<br>
-&#x1F7E5; == red square<br>
-&#x1F7E7; == orange square<br>
-&#x1F7E8; == yellow square<br>
-&#x1F7E9; == green square<br>
-&#x1F7E6; == blue square<br>
-&#x1F7EA; == purple square<br>
-&#x1F7EB; == brown square<br>
-&#x2B1B; == black large square<br>
-&#x2B1C; == white large square<br>
-&#x25FC; == black medium square<br>
-&#x25FB; == white medium square<br>
-&#x25FE; == black medium-small square<br>
-&#x25FD; == white medium-small square<br>
-&#x25AA; == black small square<br>
-&#x25AB; == white small square<br>
-&#x1F536; == large orange diamond<br>
-&#x1F537; == large blue diamond<br>
-&#x1F538; == small orange diamond<br>
-&#x1F539; == small blue diamond<br>
-&#x1F53A; == red triangle pointed up<br>
-&#x1F53B; == red triangle pointed down<br>
-&#x1F4A0; == diamond with a dot<br>
-&#x1F518; == radio button<br>
-&#x1F533; == white square button<br>
-&#x1F532; == black square button<br>
+&#x1F520; == input latin uppercase<br>
+&#x1F521; == input latin lowercase<br>
+&#x1F522; == input numbers<br>
+&#x1F523; == input symbols<br>
+&#x1F524; == input latin letters<br>
+&#x1F170; == A button (blood type)<br>
+&#x1F18E; == AB button (blood type)<br>
+&#x1F171; == B button (blood type)<br>
+&#x1F191; == CL button<br>
+&#x1F192; == COOL button<br>
+&#x1F193; == FREE button<br>
+&#x2139; == information<br>
+&#x1F194; == ID button<br>
+&#x24C2; == circled M<br>
+&#x1F195; == NEW button<br>
+&#x1F196; == NG button<br>
+&#x1F17E; == O button (blood type)<br>
+&#x1F197; == OK button<br>
+&#x1F17F; == P button<br>
+&#x1F198; == SOS button<br>
+&#x1F199; == UP! button<br>
+&#x1F19A; == VS button<br>
 
 # group: Flags
 
