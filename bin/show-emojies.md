@@ -19,6 +19,7 @@ and ideas from https://unicode.org/emoji/charts/index.html,  https://www.w3schoo
 &#x1F527; == wrench<br>
 &#x1F528; == hammer<br>
 &#x1F4BB; == computer<br>
+&#x2B50; == star<br>
 &#x1F3A8; == artist<br>
 &#x2728; == magic<br>
 &#x1F3E1; == house<br>
