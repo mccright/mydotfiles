@@ -65,6 +65,20 @@ function refreshsystem() {
 # https://github.com/cgoldberg/sniff/
 alias sniff='curl -sS --compressed -o /dev/null -w "@sniff.txt" "$1"'
 
+# a better way to 'sniff' by Corey Goldberg
+# https://github.com/cgoldberg/sniff/
+# Added minor edits to the 'if' check and 
+# enhanced the location of the config file
+function sniff2 {
+if [[ $? -ne 0 ]]; then
+        echo "no URL specified!"
+        exit 1
+else
+    export SNIFFCONFIG="@${HOME}/sniff_output_format.cfg"
+    curl -sS --compressed -o /dev/null -w $SNIFFCONFIG "$1"
+fi
+}
+
 # go back to previous directory
 # thank you Corey Goldberg
 # https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
