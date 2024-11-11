@@ -2,7 +2,7 @@
 # FROM: https://github.com/mccright/weather-in-terminal
 # Depends on a config file in ~/.config/weather-in-terminal/weather.ini (or
 # other location, which you will specify on the command line)
-if [ -x ~/bin/weather.py ]; then
+if [ -x ~/bin/weather.py ] && [ -x "~/.config/weather-in-terminal/weather.ini" ]; then
         alias weatherp='/usr/bin/python3 ~/bin/weather.py -f ~/.config/weather-in-terminal/weather.ini'
 fi
 
@@ -66,9 +66,13 @@ function refreshsystem() {
 # thank you Corey Goldberg
 # Added minor edits to the 'if' check, curl cmd, and config file
 # Enhanced the location of the config file to fit my normal setup
+# Pass the target URL in quotes.
 function sniff {
 if [[ $? -ne 0 ]]; then
     echo "no URL specified!"
+    exit 1
+elif [ -x /usr/bin/curl ] && [ -x "~/.config/sniff/sniff_output_format.cfg" ]; then
+    echo "Failed. curl or the sniff_output_format.cfg file or both are missing"
     exit 1
 else
     export SNIFFCONFIG="@${HOME}/.config/sniff/sniff_output_format.cfg"
