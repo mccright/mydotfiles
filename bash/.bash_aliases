@@ -61,21 +61,18 @@ function refreshsystem() {
   sudo apt upgrade -y
 }
 
+# https://github.com/cgoldberg/sniff/
+# This is a minor enhancement to 'sniff' by Corey Goldberg
 # thank you Corey Goldberg
-# https://github.com/cgoldberg/sniff/
-alias sniff='curl -sS --compressed -o /dev/null -w "@sniff.txt" "$1"'
-
-# a better way to 'sniff' by Corey Goldberg
-# https://github.com/cgoldberg/sniff/
-# Added minor edits to the 'if' check and 
-# enhanced the location of the config file
-function sniff2 {
+# Added minor edits to the 'if' check, curl cmd, and config file
+# Enhanced the location of the config file to fit my normal setup
+function sniff {
 if [[ $? -ne 0 ]]; then
-        echo "no URL specified!"
-        exit 1
+    echo "no URL specified!"
+    exit 1
 else
-    export SNIFFCONFIG="@${HOME}/sniff_output_format.cfg"
-    curl -sS --compressed -o /dev/null -w $SNIFFCONFIG "$1"
+    export SNIFFCONFIG="@${HOME}/.config/sniff/sniff_output_format.cfg"
+    curl -L --max-redirs 16 -D "headers" --styled-output -e "https://duckduckgo.com/" -sS --compressed -o /dev/null -w $SNIFFCONFIG "$1"
 fi
 }
 
