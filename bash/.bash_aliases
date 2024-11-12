@@ -1,3 +1,7 @@
+# Remember, if using this file breaks your aliases, use dos2unix to repair \r\n problems.
+# example:
+#    dos2unix -- .bash_aliases
+#
 # Get the current weather
 # FROM: https://github.com/mccright/weather-in-terminal
 # Depends on a config file in ~/.config/weather-in-terminal/weather.ini (or
@@ -68,16 +72,18 @@ function refreshsystem() {
 # Enhanced the location of the config file to fit my normal setup
 # Pass the target URL in quotes.
 function sniff {
-if [[ $? -ne 0 ]]; then
-    echo "no URL specified!"
+  if [[ $? -ne 0 ]]; then
+    echo "Failed, no URL. You must specify a target URL."
     exit 1
-elif [ -x /usr/bin/curl ] && [ -x "~/.config/sniff/sniff_output_format.cfg" ]; then
+  elif [ ! -x /usr/bin/curl ] || [ ! -r "${HOME}/.config/sniff/sniff_output_format.cfg" ]; then
     echo "Failed. curl or the sniff_output_format.cfg file or both are missing"
     exit 1
-else
+  else
     export SNIFFCONFIG="@${HOME}/.config/sniff/sniff_output_format.cfg"
+    # echo "curl -sS --compressed -o /dev/null -w \"$SNIFFCONFIG\" \"$1\""
+    # curl -sS --compressed -o /dev/null -w \"$SNIFFCONFIG\" "$1"
     curl -L --max-redirs 16 -D "headers" --styled-output -e "https://duckduckgo.com/" -sS --compressed -o /dev/null -w $SNIFFCONFIG "$1"
-fi
+  fi
 }
 
 # go back to previous directory
