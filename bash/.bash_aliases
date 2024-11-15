@@ -6,7 +6,7 @@
 # FROM: https://github.com/mccright/weather-in-terminal
 # Depends on a config file in ~/.config/weather-in-terminal/weather.ini (or
 # other location, which you will specify on the command line)
-if [ -x ~/bin/weather.py ] && [ -x "~/.config/weather-in-terminal/weather.ini" ]; then
+if [ -r ~/bin/weather.py ] && [ -r "~/.config/weather-in-terminal/weather.ini" ]; then
         alias weatherp='/usr/bin/python3 ~/bin/weather.py -f ~/.config/weather-in-terminal/weather.ini'
 fi
 
@@ -22,7 +22,7 @@ fi
 # Run the `todo` script.
 # Depends on a data file ~/.config/todo/.todo-list.json (or
 # other location, which you will specify on the command line)
-if [ -x ~/bin/todo.py ]; then
+if [ -r ~/bin/todo.py ]; then
         alias todo='/usr/bin/python3 ~/bin/todo.py $*'
 fi
 
