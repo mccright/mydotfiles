@@ -8,6 +8,11 @@ case $- in
       *) return;;
 esac
 
+# This is my OpenWeatherMap token
+# used by a script to fetch the weather
+export OWM_API="put-your-OWM_API_KEY-here"
+
+
 # Source proxy configuration
 if [ -f ~/.proxyrc ]; then
         . ~/.proxyrc
@@ -33,25 +38,25 @@ if [ -f /usr/lib/jvm/java-11-openjdk-amd64/bin/javac ]; then
         java --version
         echo $LINESEPARATOR
 else
-    echo "You must install openJDK. Use: sudo apt install openjdk-11-jdk"
+    echo "Do you need to install openJDK? Use: sudo apt install openjdk-23-jdk"
 fi
 
 # Expand $PATH to include the directory
 # where Java applications are installed.
-java_bin_path="/usr/lib/jvm/java-11-openjdk-amd64/bin/"
+java_bin_path="/usr/lib/jvm/java-23-openjdk-amd64/bin/"
 if [ -n "${PATH##*${java_bin_path}}" -a -n "${PATH##*${java_bin_path}:*}" ]; then
     export PATH=$PATH:${java_bin_path}
 fi
 
 # Set up Java Home if java is installed
-if [ -f /usr/lib/jvm/java-11-openjdk-amd64/bin/java  ]; then
+if [ -f /usr/lib/jvm/java-23-openjdk-amd64/bin/java  ]; then
     echo "openJDK jre is available"
         # java --version
         # echo '- - - - - - - - - -'
         echo $LINESEPARATOR
 else
     echo "I didn't find the openJDK jre. There is a problem."
-        echo "Use: sudo apt install openjdk-11-jdk"
+        echo "Use: sudo apt install openjdk-23-jdk"
 fi
 
 # Give Java a situation-required amt of RAM - May need updating
@@ -167,8 +172,8 @@ shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 # Enlarge the history length
-HISTSIZE=10000
-HISTFILESIZE=20000
+HISTSIZE=199999
+HISTFILESIZE=200000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -242,6 +247,13 @@ fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# Using: https://github.com/Macchina-CLI/macchina/
+if [ -r ~/.config/macchina/macchina.toml ] && [ -x ~/bin/macchina ]; then
+    # We have macchina support.
+    ~/bin/macchina
+fi
+
 
 # Alias definitions.
 # I put most of my aliases into a separate file like
