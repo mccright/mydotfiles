@@ -6,10 +6,13 @@
 # FROM: https://github.com/mccright/weather-in-terminal
 # Depends on a config file in ~/.config/weather-in-terminal/weather.ini (or
 # other location, which you will specify on the command line)
-if [ -r ~/bin/weather.py ] && [ -r "~/.config/weather-in-terminal/weather.ini" ]; then
-        alias weatherp='/usr/bin/python3 ~/bin/weather.py -f ~/.config/weather-in-terminal/weather.ini'
-fi
+function weatherp() {
+  if [ -r ${HOME}/bin/weather.py ] && [ -r "${HOME}/.config/weather-in-terminal/weather.ini" ]; then
+        /usr/bin/python3 ${HOME}/bin/weather.py -f ${HOME}/.config/weather-in-terminal/weather.ini
+  fi
+}
 
+# This is what I used to do...
 # Get the current weather
 # Thank you Antoine Gourlay https://github.com/gourlaysama/girouette 
 # girouette requires an OpenWeather API key (free for 1 call per second)
@@ -38,6 +41,12 @@ alias lasteditpy="find '${HOME}' -type f -name '*.py' -printf '%T@ %p\n' | grep 
 # I remove any files "site-packages" & ".cache" in the path to avoid more junk 
 # https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
 alias latest="find . -type f -printf '%TY-%Tm-%Td %TR %p\n' 2>/dev/null | grep -v -E '(.git|site-packages|.cache|virtualenv)' | sort -n | tail -n 25 | sort -n -r"
+
+# list public bash functions and aliases defined in the current shell
+# Thank you Corey Goldberg for this alias.
+# I didn't know that I needed it until experimenting with yours.
+# https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
+alias funcs="compgen -a -A function | grep -v ^_ | sort"
 
 #!/bin/sh
 # SUMMARY: Describe the current OS
@@ -258,7 +267,7 @@ function install {
 # Thank you Corey Goldberg
 # activate Python 3.x virtual environment in ./venv (create fresh one if needed)
 venv3 () {
-    local dir="venv"
+    local dir="env"
     local pyversion="Python 3.x"
     if [[ ! -d ./${dir} ]]; then
         echo "creating ${pyversion} virtual environment in ./${dir}"
@@ -331,10 +340,17 @@ if [ -x /usr/bin/dircolors ]; then
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
 
+    alias less='less --LONG-PROMPT --no-init --quit-at-eof --quit-if-one-screen --quit-on-intr --RAW-CONTROL-CHARS'
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+
+if [ -x /usr/bin/python3 ]; then
+    alias py=/usr/bin/python3
+fi
+
+alias df='df --sync --human-readable'
 
 # Don't do this alias unless you understand how
 # it expands your attack surface.
