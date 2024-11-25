@@ -18,14 +18,20 @@ function weatherp() {
 # girouette requires an OpenWeather API key (free for 1 call per second)
 # You can sign up for that key at https://openweathermap.org/price
 # Depends on a config file in ~/.config/girouette/config.yml
-if [ -x ~/bin/girouette ]; then
+if [ -x ${HOME}/bin/girouette ]; then
         alias weather='/usr/bin/echo `~/bin/girouette`'
+fi
+
+# Run the `get ntp time` script.
+# Depends on a the ntplib Python module being installed.
+if [ -r ${HOME}/bin/ntp.py ]; then
+        alias ntp='/usr/bin/python3 ~/bin/ntp.py'
 fi
 
 # Run the `todo` script.
 # Depends on a data file ~/.config/todo/.todo-list.json (or
 # other location, which you will specify on the command line)
-if [ -r ~/bin/todo.py ]; then
+if [ -r ${HOME}/bin/todo.py ]; then
         alias todo='/usr/bin/python3 ~/bin/todo.py $*'
 fi
 
