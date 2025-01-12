@@ -28,6 +28,12 @@ if [ -r ${HOME}/bin/ntp.py ]; then
         alias ntp='/usr/bin/python3 ~/bin/ntp.py'
 fi
 
+# Run the `ntp timestamp` script.
+# Depends on a the ntplib Python module being installed.
+if [ -r ${HOME}/bin/ntptimestamp.py ]; then
+        alias timestamp='/usr/bin/python3 ~/bin/ntptimestamp.py'
+fi
+
 # Run the `todo` script.
 # Depends on a data file ~/.config/todo/.todo-list.json (or
 # other location, which you will specify on the command line)
@@ -281,6 +287,7 @@ venv3 () {
     fi
     echo "activating ${pyversion} virtual environment in ./${dir}"
     source ./${dir}/bin/activate
+	echo "Remember to upgrade: \n /usr/bin/python3 -m pip install --upgrade pip && /usr/bin/python3 -m pip install --upgrade setuptools wheel && /usr/bin/python3 -m pip install -r requirements.txt"
 }
 
 # Still testing this approach
