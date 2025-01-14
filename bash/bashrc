@@ -249,9 +249,17 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # Using: https://github.com/Macchina-CLI/macchina/
-if [ -r ~/.config/macchina/macchina.toml ] && [ -x ~/bin/macchina ]; then
+# if [ -r ~/.config/macchina/macchina.toml ] && [ -x ~/bin/macchina ]; then
     # We have macchina support.
-    ~/bin/macchina
+#    ~/bin/macchina
+# fi
+
+# I used to use neofetch, then macchina, now fastfetch.
+# Source: https://github.com/fastfetch-cli/fastfetch/
+# My config file emits verbose output.  You may want to edit it.
+if [ -r $HOME/.config/fastfetch/fastfetch.jsonc ] && [ -x /usr/bin/fastfetch ]; then
+    # We have fastfetch support.
+    /usr/bin/fastfetch --config $HOME/.config/fastfetch/fastfetch.jsonc
 fi
 
 
