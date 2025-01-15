@@ -9,8 +9,19 @@
   "modules": [
     "title",
     "separator",
-    "os",
+    {
+      "type": "os",
+      "format": "{pretty-name} [v{version}] [{arch}]"
+    },
     "host",
+    {
+      "type": "board",
+      "format": "{name} {vendor} {version} {serial}"
+    },
+    {
+      "type": "chassis",
+      "format": "{name} {vendor} {version} {serial}"
+    },
     "kernel",
     "initsystem",
     "uptime",
@@ -38,6 +49,12 @@
     "font",
     "cursor",
     "cpu",
+    {
+      "type": "cpu",
+      "key": "  Cores",
+      "format": "{cores-physical} Physical & {cores-logical} Logical Cores / Temp: {temperature}",
+      "showPeCoreCount": true
+    },
     "cpucache",
     "gpu",
     "memory",
@@ -45,10 +62,16 @@
     "disk",
     "publicip",
     "localip",
+    "wifi",
     "dns",
+    "bluetooth",
+    "bluetoothradio",
     "datetime",
     "users",
-    "battery",
+    {
+      "type": "battery",
+      "key": "Battery"
+    },
     "poweradapter",
     "locale",
     "version",
