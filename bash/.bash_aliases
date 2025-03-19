@@ -247,6 +247,10 @@ function tohex() {
 }
 
 # 'bc' seems to be available on all the hosts I use.
+# Commonly: +, -, *, /, %, ^
+# bc supports a lot. ...remember sqrt(#), #^#
+# For example using arctangent:
+# pi = "(a(1) * 4)" = 3.14159265358979323844
 # This makes using it on the command like easier.
 function calc() {
   calcme=$1
