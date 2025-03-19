@@ -253,6 +253,17 @@ function calc() {
   /usr/bin/echo "$calcme" | /usr/bin/bc -l
 }
 
+# This is just another way to calculate simple math input.
+# Use domath.py script more easily. It is at:
+# https://github.com/mccright/PythonStuff/blob/main/domath.py
+# This makes using it on the command line easier.
+function domath() {
+  if [ -x /usr/bin/python3 ] && [ -r ${HOME}/bin/domath.py ]; then
+        /usr/bin/python3 ${HOME}/bin/domath.py "$1"
+  fi
+}
+
+
 # from: https://github.com/mccright/rand-notes/blob/master/Generate-random-data.md
 function randpass(){  < /dev/urandom  tr -dc '_A-Za-z0-9!@#$%^&*,.=+~' | head -c${1:-13};echo;}
 
