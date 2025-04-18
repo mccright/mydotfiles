@@ -355,6 +355,23 @@ function docs() { cd /mnt/c/Files/my-docs; }
 # Move current directory to my github repos on WSL
 function github() { cd /mnt/c/Files/dev/github; }
 
+# See http://www.thegeekstuff.com/2008/10/6-awesome-linux-cd-command-hacks-productivity-tip3-for-geeks/
+alias ..='cd ..'
+alias ..2='cd ../..'
+alias ..3='cd ../../..'
+alias ..4='cd ../../../..'
+alias ..5='cd ../../../../..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias cd..='cd ..'
+alias cd...='cd ../..'
+alias cd....='cd ../../..'
+alias cd.....='cd ../../../..'
+alias cd......='cd ../../../../..'
+
 # Add an "alert" alias for long running commands. Use like so: 
 #   sleep 10; alert
 # You may need: 'sudo apt install libnotify-bin'
