@@ -22,23 +22,38 @@ if [ -x ${HOME}/bin/girouette ]; then
         alias weather='/usr/bin/echo `~/bin/girouette`'
 fi
 
+# Python one-liner to setup a new virtual environment
+# in the current directory, then activate it, and then
+# try to install required modules from the requirements file
+function newpyvenv() {
+  if [ -x /usr/bin/python3 ]; then
+        /usr/bin/python3 -m venv .env && source .env/bin/activate && /usr/bin/python3 -m pip install --upgrade pip && /usr/bin/python3 -m pip install --upgrade setuptools wheel && /usr/bin/python3 -m pip install -r requirements.txt
+  fi
+}
+
 # Run the `get ntp time` script.
 # Depends on a the ntplib Python module being installed.
 if [ -r ${HOME}/bin/ntp.py ]; then
-        alias ntp='/usr/bin/python3 ~/bin/ntp.py'
+        alias ntp='/usr/bin/python3 ${HOME}/bin/ntp.py'
+fi
+
+# Run the `get utc time` script.
+# Depends on a the ntplib Python module being installed.
+if [ -r ${HOME}/bin/utc.py ]; then
+        alias utc='/usr/bin/python3 ${HOME}/bin/utc.py'
 fi
 
 # Run the `ntp timestamp` script.
 # Depends on a the ntplib Python module being installed.
 if [ -r ${HOME}/bin/ntptimestamp.py ]; then
-        alias timestamp='/usr/bin/python3 ~/bin/ntptimestamp.py'
+        alias timestamp='/usr/bin/python3 ${HOME}/bin/ntptimestamp.py'
 fi
 
 # Run the `todo` script.
 # Depends on a data file ~/.config/todo/.todo-list.json (or
 # other location, which you will specify on the command line)
 if [ -r ${HOME}/bin/todo.py ]; then
-        alias todo='/usr/bin/python3 ~/bin/todo.py $*'
+        alias todo='/usr/bin/python3 ${HOME}/bin/todo.py $*'
 fi
 
 # See which Python file I was last working on...
@@ -267,7 +282,6 @@ function domath() {
   fi
 }
 
-
 # from: https://github.com/mccright/rand-notes/blob/master/Generate-random-data.md
 function randpass(){  < /dev/urandom  tr -dc '_A-Za-z0-9!@#$%^&*,.=+~' | head -c${1:-13};echo;}
 
@@ -295,14 +309,13 @@ function install {
 # activate Python 3.x virtual environment in ./venv (create fresh one if needed)
 venv3 () {
     local dir="env"
-    local pyversion="Python 3.x"
+    local pyversion=`python3 --version`
     if [[ ! -d ./${dir} ]]; then
         echo "creating ${pyversion} virtual environment in ./${dir}"
         python3 -m venv "${dir}"
     fi
     echo "activating ${pyversion} virtual environment in ./${dir}"
-    source ./${dir}/bin/activate
-	echo "Remember to upgrade: \n /usr/bin/python3 -m pip install --upgrade pip && /usr/bin/python3 -m pip install --upgrade setuptools wheel && /usr/bin/python3 -m pip install -r requirements.txt"
+    source ./${dir}/bin/activate && echo "Remember to upgrade: \n /usr/bin/python3 -m pip install --upgrade pip && /usr/bin/python3 -m pip install --upgrade setuptools wheel && /usr/bin/python3 -m pip install -r requirements.txt"
 }
 
 # Still testing this approach
