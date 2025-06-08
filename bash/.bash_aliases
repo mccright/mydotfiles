@@ -91,7 +91,7 @@ printf "Current OS: %s '%s' (%s %s %s) - %sK mem avail\n" "$SHORT_DISTRIB_DESC" 
 
 #
 function updateos() {
-sudo apt-get update && sudo apt-get -y upgrade
+  sudo apt update && sudo apt upgrade -y
 }
 
 # 
