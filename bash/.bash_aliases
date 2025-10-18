@@ -22,6 +22,20 @@ if [ -x ${HOME}/bin/girouette ]; then
         alias weather='/usr/bin/echo `~/bin/girouette`'
 fi
 
+# If you want to explore the night sky, 
+# check the status of the moon (is it brighter than practical?)
+# wttr.in uses what it determines is your location.
+# or you can just add a city
+function moon() {
+  if [ ! -x /usr/bin/curl ]; then
+    echo "Something is wrong. curl is not installed or your PATH is messed up. Please fix it and try again."
+    exit 1
+  else
+    /usr/bin/curl wttr.in/moon?urbandale%20US
+  fi
+}
+
+
 # Python one-liner to setup a new virtual environment
 # in the current directory, then activate it, and then
 # try to install required modules from the requirements file
