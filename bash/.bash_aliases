@@ -35,6 +35,9 @@ function moon() {
   fi
 }
 
+# for given seconds, print minutes:seconds
+# Help from: https://linuxconfig.org/bash-scripting-mastering-arithmetic-operations
+sec2min() { printf "%d:%02d" "$((10#$1 / 60))" "$((10#$1 % 60))"; }
 
 # Python one-liner to setup a new virtual environment
 # in the current directory, then activate it, and then
@@ -262,8 +265,10 @@ function strip-whitespaces {
 # converts hex to decimal
 # tr converts lower case to upper case first, bc accepts upper case only
 function todec() {
-  uc=`echo $1 | /usr/bin/tr '[:lower:]' '[:upper:]'`
-  echo "ibase=16; $uc" | /usr/bin/bc
+  if [ -x /usr/bin/bc ] && [ -x /usr/bin/tr ] && [ -x /usr/bin/echo ]; then
+    uc=`echo $1 | /usr/bin/tr '[:lower:]' '[:upper:]'`
+    echo "ibase=16; $uc" | /usr/bin/bc
+  fi
 }
 
 # Thank you Mete Balci (https://metebalci.com/)
@@ -271,8 +276,10 @@ function todec() {
 # converts decimal to hex
 # tr converts upper case to lower case, just because
 function tohex() {
-  uc=`echo "obase=16; $1" | /usr/bin/bc`
-  /usr/bin/echo $uc | /usr/bin/tr '[:upper:]' '[:lower:]'
+ if [ -x /usr/bin/bc ] && [ -x /usr/bin/tr ] && [ -x /usr/bin/echo ]; then
+    uc=`echo "obase=16; $1" | /usr/bin/bc`
+    /usr/bin/echo $uc | /usr/bin/tr '[:upper:]' '[:lower:]'
+  fi
 }
 
 # 'bc' seems to be available on all the hosts I use.
@@ -284,6 +291,21 @@ function tohex() {
 function calc() {
   calcme=$1
   /usr/bin/echo "$calcme" | /usr/bin/bc -l
+}
+
+# calculate pi using an arctangent formula
+# https://en.wikipedia.org/wiki/List_of_formulae_involving_%CF%80#Arctangent_formulas
+function piarc() {
+  calcme="(a(1) * 4)"
+  /usr/bin/echo "$calcme" | /usr/bin/bc -l
+}
+
+# calculate pi using Python & various formulas
+# See the get_pi.py code for calculation details.
+function pi() {
+  if [ -x /usr/bin/python3 ] && [ -r ${HOME}/bin/get_pi.py ]; then
+        /usr/bin/python3 ${HOME}/bin/get_pi.py "$1"
+  fi
 }
 
 # This is just another way to calculate simple math input.
