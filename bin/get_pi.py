@@ -1,22 +1,33 @@
 #!/usr/bin/python3
 #
-# thank you Bruno Jennings
+# In responding to a question about pi in a Python
+# environment, it was clear I had assumed a better understanding 
+# than was supportable.  This rough script was an attempt 
+# to better understand the topic. 
+# 
+# Thank you Bruno Jennings for a great starting point:
 # https://importpython.com/guide-to-writing-pi-in-python/
 
 def pi_arc():
+    # https://docs.python.org/3/library/math.html#math.atan
     import math
     pi_arc_value = (math.atan(1) * 4)
     return pi_arc_value
 
+def cmath_pi():
+    # https://docs.python.org/3/library/cmath.html#cmath.pi
+    import cmath
+    pi_value = cmath.pi
+    return pi_value
 
 def math_pi():
+    # https://docs.python.org/3/library/math.html#math.pi
     import math
     pi_value = math.pi
     return pi_value
 
 def math_pi_simple():
     import decimal
-    # from decimal import *
     decimal.getcontext().prec = 34
     pi_simple_32 = decimal.Decimal(22) / decimal.Decimal(7)
     return round(pi_simple_32, 15)
@@ -26,12 +37,41 @@ def numpy_pi():
     pi_value = np.pi
     return pi_value
 
-
 def scipy_pi():
     import scipy
     pi_value = scipy.constants.pi
     return pi_value
 
+def mpmath_pi(pidigits):
+    #!/usr/bin/env python3
+    # This model is from Mihalis Tsoukalos in LinuxFormat LXF226 Aug 2017, page 92
+    # with additions from me to enforce a maximum and provide feedback to the user.
+    #
+    import sys
+    from mpmath import mp
+
+    # Only calculate up to 65,536 digits pi.
+    # If you want more, change the number below.
+    max_len = 65536
+
+    if pidigits < 3:
+        print(f"Must request at least 3 digits precision.")
+        sys.exit(0)
+    if str(pidigits).isdigit():
+        if int(pidigits) <= max_len:
+            precision = pidigits
+        else:
+            print(f"Maximum pi precision is currently: {str(max_len)}, you requested {str(pidigits)}")
+            sys.exit()
+    else:
+        print(f"You requested {str(pidigits)}. \nThis script requires a positive number representing your desired precision. \nMaximum pi precision is currently: {str(max_len)}")
+        sys.exit()
+    mp.dps = precision
+    mp_pi_value = mp.pi
+    # print(f"{mp_pi_value}")
+    round_to = 33
+    # return round(mp_pi_value, round_to)
+    return mp_pi_value
 
 def leibnitz_pi(n):
     import math
@@ -52,7 +92,7 @@ def nilakantha_pi(reps):
     pi_value = decimal.Decimal(3.0)
     op = 1
     n = 2
-    for n in range(2, 2*reps+1, 2):
+    for n in range(2, 2 * reps + 1, 2):
         pi_value += 4/decimal.Decimal(n*(n+1)*(n+2)*op)
         op *= -1
     return pi_value
@@ -176,10 +216,12 @@ def scipy_constants():
 if __name__ == '__main__':
     print(f"Scale:               .12345678901234567890123456789012")
     print(f"math.pi:            {str(math_pi())}")
+    print(f"cmath.pi:           {str(cmath_pi())}")
     print(f"math simple calc:   {str(math_pi_simple())}")
     print(f"arctangent formula: {str(pi_arc())}")
     print(f"numpy.pi:           {str(numpy_pi())}")
     print(f"scipy.pi:           {str(scipy_pi())}")
+    print(f"mpmath.pi:          {str(mpmath_pi(34))}")
     pi_num = chudnovsky_pi(32)
     print(f"Chudnovsky calc pi: {str(pi_num)}")
     pi_num = pi_chudnovsky_bs(32)
