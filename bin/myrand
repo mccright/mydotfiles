@@ -1,10 +1,10 @@
 #!/usr/bin/bash
 # There are many reasons to need a little 'random' data quickly
 # I use base64 output because it is more compatible with 
-# my console behaviors.  You could remove it on line 22 
+# my console behaviors.  You could remove it on line 23 
 # and the script would emit binary output again.  
 
-limit=4092
+limit=16384
 
 if [[ -z $* ]]
 then
