@@ -48,11 +48,12 @@ def mpmath_pi(pidigits):
     # with additions from me to enforce a maximum and provide feedback to the user.
     #
     import sys
+    import decimal
     from mpmath import mp
 
-    # Only calculate up to 65,536 digits pi.
+    # Only calculate up to 16,384 digits pi.
     # If you want more, change the number below.
-    max_len = 65536
+    max_len = 16384
 
     if pidigits < 3:
         print(f"Must request at least 3 digits precision.")
@@ -68,10 +69,11 @@ def mpmath_pi(pidigits):
         sys.exit()
     mp.dps = precision
     mp_pi_value = mp.pi
-    # print(f"{mp_pi_value}")
-    round_to = 33
-    # return round(mp_pi_value, round_to)
-    return mp_pi_value
+    dec_pi_value: decimal.Decimal = mp_pi_value
+    round_to = int(pidigits)
+    # return truncate_decimal(dec_pi_value, round_to)
+    return dec_pi_value
+
 
 def leibnitz_pi(n):
     import math
@@ -221,7 +223,7 @@ if __name__ == '__main__':
     print(f"arctangent formula: {str(pi_arc())}")
     print(f"numpy.pi:           {str(numpy_pi())}")
     print(f"scipy.pi:           {str(scipy_pi())}")
-    print(f"mpmath.pi:          {str(mpmath_pi(34))}")
+    print(f"mpmath.pi:          {str(mpmath_pi(64))}")
     pi_num = chudnovsky_pi(32)
     print(f"Chudnovsky calc pi: {str(pi_num)}")
     pi_num = pi_chudnovsky_bs(32)
