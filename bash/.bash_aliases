@@ -86,6 +86,11 @@ alias lasteditpy="find '${HOME}' -type f -name '*.py' -printf '%T@ %p\n' | grep 
 # https://github.com/cgoldberg/dotfiles/blob/master/.bash_aliases
 alias latest="find . -type f -printf '%TY-%Tm-%Td %TR %p\n' 2>/dev/null | grep -v -E '(.git|site-packages|.cache|virtualenv)' | sort -n | tail -n 25 | sort -n -r"
 
+# Start up a new "raw" shell, with none of your personalization
+# Thank you https://github.com/HariSekhon
+# https://github.com/HariSekhon/DevOps-Bash-tools/blob/master/.bash.d/aliases.sh
+alias cleanshell='env - bash --norc --noprofile'
+
 # list public bash functions and aliases defined in the current shell
 # Thank you Corey Goldberg for this alias.
 # I didn't know that I needed it until experimenting with yours.
