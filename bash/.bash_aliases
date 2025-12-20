@@ -323,6 +323,14 @@ function domath() {
   fi
 }
 
+# This function converts seconds into a more
+# human-friendly format
+function sec2hrs() {
+  if [ -x ${HOME}/bin/seconds2hours.sh ] ; then
+        ${HOME}/bin/seconds2hours.sh "$1"
+  fi
+}
+
 # from: https://github.com/mccright/rand-notes/blob/master/Generate-random-data.md
 function randpass(){  < /dev/urandom  tr -dc '_A-Za-z0-9!@#$%^&*,.=+~' | head -c${1:-13};echo;}
 
