@@ -2,7 +2,10 @@
 set -e
 
 # From: https://github.com/appatalks/ticker.sh/tree/main
-# Thank you: appatalks & pstadler
+# Thank you: appatalks & pstadler. This has been a useful
+# time-saving utility.
+# I (github.com/mccright) made a couple changes to the
+# equities outputs, but the script logic remains unchanged.
 #-----------------------------------------------------
 # Example: ./ticker.sh WFC PFG PAXWX DRTHX
 #-----------------------------------------------------
