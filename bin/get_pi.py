@@ -217,9 +217,9 @@ def scipy_constants():
 
 if __name__ == '__main__':
     print(f"Scale:               .12345678901234567890123456789012")
+    print(f"math simple calc:   {str(math_pi_simple())}")
     print(f"math.pi:            {str(math_pi())}")
     print(f"cmath.pi:           {str(cmath_pi())}")
-    print(f"math simple calc:   {str(math_pi_simple())}")
     print(f"arctangent formula: {str(pi_arc())}")
     print(f"numpy.pi:           {str(numpy_pi())}")
     print(f"scipy.pi:           {str(scipy_pi())}")
