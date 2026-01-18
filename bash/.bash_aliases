@@ -540,4 +540,10 @@ function extract() {
      fi 
 }
 
+# Print only the number in 'wc -l' output.
+# No newline character so it is pipeline-friendly.
+# Thank you https://github.com/hacl-star/hacl-star/blob/main/tools/sloccount.sh
+function leanwc () {
+  wc -l $1 | sed 's/^ *\([0-9]*\).*/\1/' | tr -d '\n'
+}
 
