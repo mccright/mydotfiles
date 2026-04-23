@@ -18,9 +18,21 @@ function weatherp() {
 # girouette requires an OpenWeather API key (free for 1 call per second)
 # You can sign up for that key at https://openweathermap.org/price
 # Depends on a config file in ~/.config/girouette/config.yml
-if [ -x ${HOME}/bin/girouette ]; then
-        alias weather='/usr/bin/echo `~/bin/girouette`'
-fi
+## if [ -x ${HOME}/bin/girouette ]; then
+##         alias weather='/usr/bin/echo `~/bin/girouette`'
+## fi
+
+# URL-encode strings
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+# View HTTP traffic
+# Thank you Tania Allard
+# https://github.com/trallard/dotfiles/blob/master/linux-profile/.aliases
+# 'sniff' may be useful for identifying any plain text communication that may be leaking
+alias sniff="sudo ngrep -d 'eth0' -t '^(GET|POST) ' 'tcp and port 80 | 443'"
+# 'httpdump' may help too
+alias httpdump="sudo tcpdump -i eth0 -n -s 0 -w - | grep -a -o -E \"Host\\: .*|GET \\/.*\""
+
 
 # If you want to explore the night sky, 
 # check the status of the moon (is it brighter than practical?)
