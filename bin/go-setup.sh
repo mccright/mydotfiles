@@ -5,7 +5,8 @@
 # VERSION="1.18"
 # VERSION="1.20.4"
 # VERSION="1.24.6"
-VERSION="1.26.1"
+# VERSION="1.26.1"
+VERSION="1.26.6"
 
 source .bashrc
 # download the specified golang version
