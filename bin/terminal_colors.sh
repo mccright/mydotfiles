@@ -5,6 +5,7 @@
 # https://github.com/TheKevJames/tools/blob/master/docker-tuning-primer/root/tuning-primer.sh
 # and I only built out the broader spectrum
 # later I saw:  
+# https://github.com/Cecil-Libraries/Cecil-ANSI-Utils/
 # https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
 # https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
 # ## Font Effects  
